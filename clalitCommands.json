@@ -5,7 +5,7 @@
     {
         "type": "run",
         "desc": "Show kadabra commands help", 
-        "cmd": "echo clalit 1.0.20.0"
+        "cmd": "echo clalit 1.0.20.1"
     },
 
     "io01_update": 
@@ -25,7 +25,7 @@
     "sniff": 
     {
         "type": "run",
-        "desc": "Sniff traffic into PCAP file | Params <network_interface> <output_pcap_file> <number_of_packets>", 
+        "desc": "Sniff traffic into PCAP file. Params <network_interface> <output_pcap_file> <number_of_packets>", 
         "cmd": "sudo python3  ./third_party/sniffer.py"
     },
   
@@ -42,21 +42,21 @@
     {
         "type": "run",
         "desc": "discover.T1595.001: Active port scan using Nmap", 
-        "cmd": 	"nmap -Pn -sT --scan-delay 1s --max-parallelism 1  -p 80,102,443,502,530,593,789,1089-1091,1911,1962,2222,2404,4000,4840,4843,4911,9600,19999,20000,20547,34962-34964,34980,44818,46823,46824,55000-55003"
+        "cmd": 	"sudo nmap -Pn -sT --scan-delay 1s -p 80,102,443,502,530,593,789,1089-1091,1911,1962,2222,2404,4000,4840,4843,4911,9600,19999,20000,20547,34962-34964,34980,44818,46823,46824,55000-55003"
     },
     
     "S7-scan": 
     {
         "type": "run",
         "desc": "discover.T1423.002: OT_Network Service Scan--> Siemens SIMATIC S7 PLCs <target_ip_block>", 
-        "cmd": "nmap -Pn -sT -p102 --script s7-info"
+        "cmd": "sudo nmap -Pn -sT -p102 --script s7-info"
     },
     
     "modbus-scan-na": 
     {
         "type": "run",
         "desc": "Non aggressive nmap <target_ip>", 
-        "cmd": "nmap -Pn -sT -p502 --script modbus-discover"
+        "cmd": "sudo nmap -Pn -sT -p502 --script modbus-discover"
     },
 
     "enip-scan": 
@@ -70,7 +70,7 @@
     {
         "type": "run",
         "desc": "aggressive nmap <target_ip>",
-        "cmd": "nmap -sT -Pn -p502 --script modbus-discover --script-args modbus-discover.aggressive=true",
+        "cmd": "sudo nmap -sT -Pn -p502 --script modbus-discover --script-args modbus-discover.aggressive=true",
         "default": "set_target_dev"
     },
   
@@ -78,19 +78,19 @@
 	    {
 		"type": "interactive",
 		"desc": "bacnet scan <target_ip>", 
-		"cmd": "nmap -Pn -sU -p47808 --script bacnet-info"
+		"cmd": "sudo nmap -Pn -sU -p47808 --script bacnet-info"
 	    },
    "omron-scan-sU": 
 	    {
 		"type": "run",
 		"desc": "Omrom PLC Devices UDP/TCP <target_ip>", 
-		"cmd": "nmap -Pn -sU -p9600 --script omrom-info"
+		"cmd": "sudo nmap -Pn -sU -p9600 --script omrom-info"
 	    },
    "omron-scan-sT": 
 	    {
 		"type": "run",
 		"desc": "Omrom PLC Devices UDP/TCP <target_ip>", 
-		"cmd": "nmap -Pn -sT -p9600 --script omrom-info"
+		"cmd": "sudo nmap -Pn -sT -p9600 --script omrom-info"
 	    },
    "discover_passwords": 
 	    {
@@ -103,7 +103,7 @@
 	    {
 		"type": "run",
 		"desc": "Modbus write single coil <tpreconf>", 
-		"cmd": "python3 /home/io01/Desktop/labio/Kadabra/IO01_v03/io.py"
+		"cmd": "sudo python3 /home/io01/Desktop/labio/Kadabra/IO01_v03/io.py"
 	    },
 
 "ping_target_dev":
