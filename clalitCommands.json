@@ -5,7 +5,7 @@
     {
         "type": "run",
         "desc": "Show kadabra commands help", 
-        "cmd": "echo clalit 1.0.20.1"
+        "cmd": "echo clalit 1.0.20.2"
     },
 
     "io01_update": 
