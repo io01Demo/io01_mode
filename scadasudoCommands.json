@@ -176,6 +176,12 @@
         "type": "run",
         "desc": "schneider_metasploit_attack <IP>: disables and enables the PLC IOs",
         "cmd": "/home/io01/Desktop/scadasudo/metasploit_attacks/schneider_io_executor"
+    },
+	  "sniffer1":
+    {
+        "type": "run",
+        "desc": "scapy sniffer",
+        "cmd": "sudo python3  ./third_party/sniffer1.py"
     }
 
 }
