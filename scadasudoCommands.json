@@ -14,7 +14,14 @@
         "desc": "Show kadabra commands help", 
         "cmd": "sh ./io01_update.sh"
     },
-	
+
+	"whoami": 
+    {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "whoami"
+    },
+
     "snort": 
     {
         "type": "run",
