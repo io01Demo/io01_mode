@@ -181,7 +181,7 @@
     {
         "type": "run",
         "desc": "scapy sniffer",
-        "cmd": "sudo python3  ./third_party/sniffer1.py"
+        "cmd": "sudo python3  ./third_party/sniffer1.py -i ens35 -o output2.pcap -c 10"
     }
 
 }
