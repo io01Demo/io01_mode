@@ -32,7 +32,7 @@
    "cve": 
     {
         "type": "run",
-        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <vendor> <product>", 
+        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <vendor> <product> <outputfile.json>", 
         "cmd": "sudo ./third_party/nvd.sh"
     },
 
