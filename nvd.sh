@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#LastUpdate-16-12-23
 # Set variables
 base_url="https://services.nvd.nist.gov/rest/json/cves/2.0?"
 vendor="$1"
@@ -34,12 +35,20 @@ headers="-H \"apiKey: $api_key\""
 curl $query_url -o $filename
 #cves=$(curl -sSL "$query_url" $headers)
 #cves=$(curl -sSL "$query_url" )
-cat $filename | jq ".vulnerabilities "
-cat $filename | jq  ".vulnerabilities " > "CVE" + $filename #JSON format
-#rm $filename
+#validate Json queries at https://jqterm.com/
+#.vulnerabilities[].cve
+#.vulnerabilities[].cve.id
+#.vulnerabilities[].cve.descriptions[].value
+#.vulnerabilities[].cve.published
+#.vulnerabilities[].cve | [.id, .descriptions[].value, .published]
+#.vulnerabilities[].cve | [.id, .descriptions[].value, .published] | @csv
+
 echo "Relavant CVE's"
 echo "---------------------------"
-cat "CVE" + $filemame |grep "CVE" 
+cat $filename | jq '.vulnerabilities[].cve | [.id, .descriptions[].value, .published]'
+CVEfile="CVE"$filename
+cat $filename | jq  '.vulnerabilities[].cve | [.id, .descriptions[].value, .published] | @csv' > $CVEfile #JSON format
+
 msg="Query- $query_url"
 echo $msg
 echo "For detailed information about each CVE, please visit the NVD website: https://nvd.nist.gov/vuln/detail Or contact IO01 team"
