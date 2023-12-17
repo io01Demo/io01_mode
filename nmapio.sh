@@ -12,7 +12,8 @@ if [[ -z "$ip" ]]; then
 fi
 
 echo "[+] executing OT port scanning "
-sudo nmap -sn -oX $filename $ip
+sudo nmap -Pn -sT --scan-delay 1s -p 80,102,443,502,530,593,789,1089-1091,1911,1962,2222,2404,4000,4840,4843,4911,9600,19999,20000,20547,34962-34964,34980,44818,46823,46824,55000-55003 -oX $filename $ip
+#sudo nmap -sn -oX $filename $ip
 echo "[+] converting to JSON"
 
 python3 nmappy.py $filename tmpJS.json
@@ -23,24 +24,14 @@ cat tmpJS.json
 echo "[*] Done. "
 
 
-#cves=$(curl -sSL "$query_url" $headers)
-#cves=$(curl -sSL "$query_url" )
-
-#.vulnerabilities[].cve
-#.vulnerabilities[].cve.id
-#.vulnerabilities[].cve.descriptions[].value
-#.vulnerabilities[].cve.published
-#.vulnerabilities[].cve | [.id, .descriptions[].value, .published]
-#.vulnerabilities[].cve | [.id, .descriptions[].value, .published] | @csv
+#.nmaprun.host
+#.nmaprun.host.address
+#.nmaprun.host.hostnames
+#.nmaprun.host.ports
 
 #echo "Relavant CVE's"
 #echo "---------------------------"
-#cat $filename | jq '.vulnerabilities[].cve | [.id, .descriptions[].value, .published]'
-#CVEfile="CVE"$filename
-#cat $filename | jq  '.vulnerabilities[].cve | [.id, .descriptions[].value, .published] | @csv' > $CVEfile #JSON format
-
-#msg="Query- $query_url"
-#echo $msg
+#cat tmpJS.json | jq '.vulnerabilities[].cve | [.id, .descriptions[].value, .published]'
 #echo "For detailed information about each CVE, please visit the NVD website: https://nvd.nist.gov/vuln/detail Or contact IO01 team"
 
 exit 0
