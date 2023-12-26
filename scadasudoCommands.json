@@ -182,7 +182,7 @@
     {
         "type": "run",
         "desc": "schneider_metasploit_attack <IP>: disables and enables the PLC IOs",
-        "cmd": "/home/io01/Desktop/scadasudo/metasploit_attacks/schneider_io_executor"
+        "cmd": "./third_party/schneider_io_executor"
     },
 	  "sniffer1":
     {
