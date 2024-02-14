@@ -28,6 +28,7 @@ echo "[*] Done. "
 #.nmaprun.host.address
 #.nmaprun.host.hostnames
 #.nmaprun.host.ports
+#.nmaprun.host[].address."@addr"
 
 #echo "Relavant CVE's"
 #echo "---------------------------"
