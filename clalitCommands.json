@@ -55,9 +55,16 @@
  "port-scan-JSON": 
     {
         "type": "run",
-        "desc": "discover.T1595.001: Active port scan using Nmap", 
+        "desc": "discover.T1595.001: Active port scan using Nmap PARAMS <IP,Output File>", 
         "cmd": 	"sudo ./third_party/nmapio.sh"
     },
+"s7-backup": 
+    {
+        "type": "run",
+        "desc": "S7 backup using S7 protocol PARAMS <ip, OutputFile", 
+        "cmd": 	"sudo ./third_party/s7backup.sh"
+    },
+	
     
     "S7-scan": 
     {
