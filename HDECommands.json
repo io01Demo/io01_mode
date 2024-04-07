@@ -2,13 +2,19 @@
     "io01_ver": {
         "type": "run",
         "desc": "Show kadabra commands help", 
-        "cmd": "echo OPWIN23"
+        "cmd": "echo HDE"
     },
 
     "io01_update": {
         "type": "run",
         "desc": "Update  kadabra", 
         "cmd": "sh ./io01_update.sh"
+    },
+
+      "sublist3r": {
+        "type": "run",
+        "desc": "Use Sublist3r to find subdomains INPUT:[target_website]",
+        "cmd": "sudo python3 ./third_party/Sublist3r/sublist3r.py -d"
     },
 
     "sysinfo": 
@@ -18,7 +24,15 @@
         "cmd": "sudo nmap -O -v"
     },
 
-    
+      
+    "nmap-vulners": 
+    {
+        "type": "run",
+        "desc": "prints out known vulns <target_ip>", 
+        "cmd": "   nmap --script nmap-vulners/ -sV "
+    },
+
+       
     "nikto": {
         "type": "run",
         "desc": "Scan the target website for potential vulnerabilities INPUT:[target_website]",
@@ -31,14 +45,7 @@
         "cmd": "sudo sh ./third_party/crawl_website.sh"
     },
     
-    "sublist3r": {
-        "type": "run",
-        "desc": "Use Sublist3r to find subdomains INPUT:[target_website]",
-        "cmd": "sudo python3 ./third_party/Sublist3r/sublist3r.py -d"
-    },
-    
-
-   "xsstrike": {
+    "xsstrike": {
         "type": "run",
         "desc": "Scan the target website for XSS:[target_website]",
         "cmd": "python3 ./downloads/XSStrike/xsstrike.py -u"
