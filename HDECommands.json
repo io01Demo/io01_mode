@@ -1,0 +1,91 @@
+   {
+    "io01_ver": {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "echo OPWIN23"
+    },
+
+    "io01_update": {
+        "type": "run",
+        "desc": "Update  kadabra", 
+        "cmd": "sh ./io01_update.sh"
+    },
+
+    "sysinfo": 
+    {
+        "type": "run",
+        "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint <target_ip>", 
+        "cmd": "sudo nmap -O -v"
+    },
+
+    
+    "nikto": {
+        "type": "run",
+        "desc": "Scan the target website for potential vulnerabilities INPUT:[target_website]",
+        "cmd": "nikto -h"
+    },
+    
+    "MSFscan": {
+        "type": "interactive",
+        "desc": "Use MSF to crawl the websute INPUT:[target_website]",
+        "cmd": "sudo sh ./third_party/crawl_website.sh"
+    },
+    
+    "sublist3r": {
+        "type": "run",
+        "desc": "Use Sublist3r to find subdomains INPUT:[target_website]",
+        "cmd": "sudo python3 ./third_party/Sublist3r/sublist3r.py -d"
+    },
+    
+
+   "xsstrike": {
+        "type": "run",
+        "desc": "Scan the target website for XSS:[target_website]",
+        "cmd": "python3 ./downloads/XSStrike/xsstrike.py -u"
+    },
+
+ "drupwn": {
+        "type": "run",
+        "desc": "Scan Drupal website for Drupal exploits:[target_website]",
+        "cmd": "python3 ./downloads/drupwn/drupwn --mode enum --target"
+    },
+
+
+    "dirb": {
+        "type": "run",
+        "desc": "Scan the target website for hidden directories and files INPUT:[target_website]",
+        "cmd": "dirb"
+    },
+
+    
+    "wpscan": {
+        "type": "run",
+        "desc": "Perform a Wordpress site security assessment INPUT:[target_url]",
+        "cmd": "wpscan --no-update --random-user-agent --api-token 9veCnFHY0OqidgUeH6AohYr1w2tHR4swS1bnz2s5zmw --url"
+    },
+
+    "proxy-dump": {
+        "type": "interactive",
+        "desc": "set mitmproxy | port 8082",
+        "cmd": " ./downloads/mitmdump --mode regular@8082  --set block_global=false"
+    },
+
+    "proxy": {
+        "type": "interactive",
+        "desc": "set mitmproxy | port 8092",
+        "cmd": " ./downloads/mitmproxy --mode regular@8092  --set block_global=false"
+    },
+
+    "c": {
+        "type": "interactive",
+        "desc": "TLV weather",
+        "cmd": "\"curl http://wtr.in/tlv?0\""
+    },
+
+    "sqlmap": {
+        "type": "interactive",
+        "desc": "Scan the target website for SQL injection vulnerabilities INPUT:[target_website]",
+        "cmd": "sqlmap --batch --level=5 --risk=3 --random-agent -u "
+
+    }
+}
