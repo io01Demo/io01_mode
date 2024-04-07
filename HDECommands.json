@@ -27,10 +27,16 @@
     "ssh-brute": 
     {
         "type": "run",
-        "desc": "SSH Bruteforce <Target>", 
+        "desc": "SSH bruteforce using Nmap <Target>", 
         "cmd": "sudo nmap -p 22 --script ssh-brute --script-args userdb=users.lst,passdb=pass.lst "
     },
       
+    "ssh_login": {
+        "type": "interactive",
+        "desc": "Use MSF to bruteforce SSH [Target]",
+        "cmd": "sudo sh ./third_party/sshBrute.sh"
+    },
+
     "nmap-vulners": 
     {
         "type": "run",
@@ -38,7 +44,6 @@
         "cmd": "   nmap --script nmap-vulners/ -sV "
     },
 
-       
     "nikto": {
         "type": "run",
         "desc": "Scan the target website for potential vulnerabilities INPUT:[target_website]",
