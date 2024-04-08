@@ -41,7 +41,7 @@
     "ssh_login": {
         "type": "interactive",
         "desc": "Use MSF to bruteforce SSH [Target]",
-        "cmd": "sudo sh ./third_party/sshBrute.sh"
+        "cmd": "sudo ./third_party/sshBrute.sh"
     },
 
     "nikto": {
@@ -53,7 +53,7 @@
     "MSFscan": {
         "type": "interactive",
         "desc": "Use MSF to crawl the websute INPUT:[target_website]",
-        "cmd": "sudo sh ./third_party/crawl_website.sh"
+        "cmd": "sudo ./third_party/crawl_website.sh"
     },
     
     "xsstrike": {
