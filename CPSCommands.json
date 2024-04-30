@@ -1,0 +1,95 @@
+{
+    
+    "io01_ver": 
+    {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "echo 1.0.18.4"
+    },
+
+    "io01_update": 
+    {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "sh ./io01_update.sh"
+    },
+	
+    "snort": 
+    {
+        "type": "run",
+        "desc": "snort 2.9.15.1", 
+        "cmd": "sudo snort"
+    },
+
+    "kadabra_help": 
+    {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "cat kadabra_commands_help"
+    },
+    
+    "scapy": 
+    {
+        "type": "run",
+        "desc": "run scapy", 
+        "cmd": "sudo scapy"
+    },
+    
+   "s01_01": 
+    {
+        "type": "run",
+        "desc": "View Local Network Interfaces--> get_local_interface", 
+        "cmd": "sudo ifconfig"
+    }, 
+    
+    
+    "s01_02": 
+    {
+        "type": "run",
+        "desc": "discover.T1595.001: Remote System Discovery--> netscan <target_ip_block>", 
+        "cmd": 	"sudo nmap -sn"
+    },
+    
+    "s01_03": 
+    {
+        "type": "run",
+        "desc": "discover.T1423.002: OT_Network Service Scan-->  ot_netscan <target_ip_block>", 
+        "cmd": "sudo nmap -sV -p 80,102,443,502,530,593,789,1089-1091,1911,1962,2222,2404,4000,4840,4843,4911,9600,19999,20000,20547,34962-34964,34980,44818,46823,46824,55000-55003"
+    },
+    
+    "s01_06": 
+    {
+        "type": "run",
+        "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint <target_ip>", 
+        "cmd": "sudo nmap -O -v"
+    },
+
+    "s01_07": 
+    {
+        "type": "run",
+        "desc": "discover.T0888.001: OT SysInfo Discovery-enip--> enip_fingerprint <target_ip>", 
+        "cmd": "sudo nmap -Pn -sU -p44818 --script enip-info"
+    },
+    
+    "s01_08":
+    {
+        "type": "run",
+        "desc": "recon.T1595.002:Vulnerability Scanning-->vulnscan <target_ip>",
+        "cmd": "sudo nmap -sV --script nmap-vulners/",
+        "default": "set_target_dev"
+    },
+  
+   "s01_09": 
+	    {
+		"type": "interactive",
+		"desc": "exploit.T0866.001:Exploit Remote Service target-->ml1400_exploit <target_ip>", 
+		"cmd": "sudo ./bin/ethersploit"
+	    },
+   "s01_10": 
+	    {
+		"type": "run",
+		"desc": "impair.T0855.001-->Unauthorized command: Modbus write single coil <tpreconf> OFF", 
+		"cmd": "python3 ./bin/io.py"
+	    }
+    
+}
