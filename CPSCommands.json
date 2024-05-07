@@ -89,7 +89,7 @@
 	    {
 		"type": "run",
 		"desc": "impair.T0855.001-->Unauthorized command: Modbus write single coil <tpreconf> OFF", 
-		"cmd": "python3 ./bin/io.py"
+		"cmd": "sudo python3 ./third_party/io.py"
 	    }
     
 }
