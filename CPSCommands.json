@@ -4,7 +4,7 @@
     {
         "type": "run",
         "desc": "Show kadabra commands help", 
-        "cmd": "echo 1.0.18.4"
+        "cmd": "echo 1.0.20.0 CPS"
     },
 
     "io01_update": 
@@ -21,11 +21,18 @@
         "cmd": "sudo snort"
     },
 
-    "kadabra_help": 
+    "tcpdump": 
     {
         "type": "run",
-        "desc": "Show kadabra commands help", 
-        "cmd": "cat kadabra_commands_help"
+        "desc": "tcp dump utility --> tcpdump-i <interface> -s 65535 -w <file>", 
+        "cmd": "tcpdump"
+    },
+    
+     "tshark": 
+    {
+        "type": "run",
+        "desc": "thsark - Wireshark CLI version", 
+        "cmd": "tshark"
     },
     
     "scapy": 
