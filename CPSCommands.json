@@ -19,6 +19,12 @@
         "desc": "Show kadabra commands help 🚑", 
         "cmd": "cat CPSCommands.json"
     },
+ "p0f": 
+    {
+        "type": "run",
+        "desc": "p0f passive scan", 
+        "cmd": "sudo p0f"
+    },
 	
     "snort": 
     {
