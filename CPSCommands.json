@@ -13,6 +13,12 @@
         "desc": "Show kadabra commands help", 
         "cmd": "sh ./io01_update.sh"
     },
+	   "help": 
+    {
+        "type": "run",
+        "desc": "Show kadabra commands help 🚑", 
+        "cmd": "cat CPSCommands.json"
+    },
 	
     "snort": 
     {
