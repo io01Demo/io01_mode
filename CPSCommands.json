@@ -25,6 +25,12 @@
         "desc": "p0f passive scan", 
         "cmd": "sudo p0f"
     },
+	 "readp0flog": 
+    {
+        "type": "run",
+        "desc": "read p0f log at /var/log/p0f.log", 
+        "cmd": "cat /var/log/p0f.log"
+    },
 	
     "snort": 
     {
