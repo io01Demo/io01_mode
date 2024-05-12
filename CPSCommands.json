@@ -13,7 +13,7 @@
         "desc": "Show kadabra commands help", 
         "cmd": "sh ./io01_update.sh"
     },
-	   "help": 
+	   "helpme": 
     {
         "type": "run",
         "desc": "Show kadabra commands help 🚑", 
