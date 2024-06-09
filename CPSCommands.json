@@ -60,7 +60,7 @@
         "cmd": "sudo scapy"
     },
 	
- "MitM": 
+ "mitm": 
     {
         "type": "run",
         "desc": "run Man-in-the-Middle attack - NO LIGHT 💡", 
