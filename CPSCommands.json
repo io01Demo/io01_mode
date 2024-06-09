@@ -59,6 +59,13 @@
         "desc": "run scapy", 
         "cmd": "sudo scapy"
     },
+	
+ "MitM": 
+    {
+        "type": "run",
+        "desc": "run Man-in-the-Middle attack - NO LIGHT 💡", 
+        "cmd": "sudo python3 ./third_party/modbus_mitm_io01.py"
+    },
     
    "s01_01": 
     {
