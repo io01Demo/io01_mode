@@ -35,8 +35,8 @@
     "snort": 
     {
         "type": "run",
-        "desc": "snort 2.9.15.1", 
-        "cmd": "sudo snort"
+        "desc": "snort 3.2.2.0 🐖", 
+        "cmd": "sudo snort -c /usr/local/etc/snort/snort.lua -R /usr/local/etc/rules/local.rules -i enp0s31f6 -A alert_fast -s 65535 -k none"
     },
 
     "tcpdump": 
