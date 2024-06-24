@@ -44,7 +44,7 @@
   "create-files-ioc": {
         "type": "run",
         "desc": "create a floder BringThemeHomeNow with relvant files based on UNC1549",
-        "cmd": "sudo sh ./third_party/unc1549/demo/create_files.sh ./third_party/unc1549/demo/UNC1549Files.txt"
+        "cmd": "sudo sh ./third_party/unc1549/demo/create_files.sh ./third_party/unc1549/demo/file_names.txt"
     },
  "show-files-ioc": {
         "type": "run",
