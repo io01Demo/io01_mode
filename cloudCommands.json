@@ -23,9 +23,7 @@
         "cmd": "sudo sh ./third_party/AzureInfo.sh"
     },
 
-      lsb_release -a
-      
-         "OSimage": {
+   "OSimage": {
         "type": "run",
         "desc": "curl <URL>",
         "cmd": "sudo  lsb_release -a"
