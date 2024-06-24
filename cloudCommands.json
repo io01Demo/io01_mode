@@ -23,12 +23,14 @@
         "cmd": "sudo sh ./third_party/AzureInfo.sh"
     },
 
-         "curl": {
+      lsb_release -a
+      
+         "OSimage": {
         "type": "run",
         "desc": "curl <URL>",
-        "cmd": "sudo curl"
+        "cmd": "sudo  lsb_release -a"
     },
-     
+           
       "domain-info": {
         "type": "run",
         "desc": "translte domain to ip and get info from ipinfo.io",
@@ -61,6 +63,12 @@
         "type": "run",
         "desc": "trivy",
         "cmd": "sudo trivy"
+    },
+      
+         "curl": {
+        "type": "run",
+        "desc": "curl <URL>",
+        "cmd": "sudo curl"
     }
            
 }
