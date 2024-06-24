@@ -17,6 +17,12 @@
         "cmd": "az login --tenant 2ee71381-419e-4264-b43d-2823b9fa5612"
     },
 
+    "IPinfo": {
+        "type": "run",
+        "desc": "ipinfo", 
+        "cmd": "curl -s 'https://ipinfo.io/'"
+    },
+      
    "AzureInfo": {
         "type": "run",
         "desc": "Update  kadabra", 
