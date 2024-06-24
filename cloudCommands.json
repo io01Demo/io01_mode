@@ -20,12 +20,19 @@
     "IPinfo": {
         "type": "run",
         "desc": "ipinfo", 
-        "cmd": "curl -s 'https://ipinfo.io/'"
+        "cmd": "curl -s https://ipinfo.io/"
     },
+      
+ "getIPfromDomain": {
+        "type": "run",
+        "desc": "translte ip domain name to ip address", 
+        "cmd": "dig +short"
+    },
+      
       
    "AzureInfo": {
         "type": "run",
-        "desc": "Update  kadabra", 
+        "desc": "get azure info from cache using Azure CLI", 
         "cmd": "sudo sh ./third_party/AzureInfo.sh"
     },
 
@@ -37,7 +44,7 @@
            
       "domain-info": {
         "type": "run",
-        "desc": "translte domain to ip and get info from ipinfo.io",
+        "desc": "translte domain to ip and get info from ipinfo.io about UNC1549",
         "cmd": "sudo sh ./third_party/unc1549/demo/domain_ip_info.sh ./third_party/unc1549/demo//unc1549_c2_domains.txt ./third_party/unc1549/demo/out_c2.json"
     },
 
