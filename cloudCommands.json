@@ -51,7 +51,7 @@
 
   "dig": {
         "type": "run",
-        "desc": dns lookup using dig",
+        "desc": "dns lookup using dig",
         "cmd": "sudo dig"
     },
   "createfile": {
@@ -64,10 +64,4 @@
         "desc": "run yara",
         "cmd": "sudo yara"
     }  
-
-    
-
-
-     
-
 }
