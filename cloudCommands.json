@@ -11,38 +11,12 @@
         "cmd": "sh ./io01_update.sh"
     },
 
-    "showcommands": {
+   "AzureInfo": {
         "type": "run",
         "desc": "Update  kadabra", 
-        "cmd": "cat ./home/IO01DEMO/io01/kadabra/io01_mode/cloudCommands.json"
+        "cmd": "sudo sh ./third_party/AzureInfo.sh"
     },
 
-      "sublist3r": {
-        "type": "run",
-        "desc": "Use Sublist3r to find subdomains INPUT:[target_website]",
-        "cmd": "sudo python3 ./third_party/Sublist3r/sublist3r.py -d"
-    },
-
-    "sysinfo": 
-    {
-        "type": "run",
-        "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint <target_ip>", 
-        "cmd": "sudo nmap -O -v"
-    },
-      
-  "nmap-vulners": 
-    {
-        "type": "run",
-        "desc": "Prints out known vulns <target_ip>", 
-        "cmd": "   nmap --script nmap-vulners/ -sV "
-    },
-      
-       "dirb": {
-        "type": "run",
-        "desc": "Scan the target website for hidden directories and files INPUT:[target_website]",
-        "cmd": "sudo dirb"
-    },
-     
          "curl": {
         "type": "run",
         "desc": "curl <URL>",
@@ -81,5 +55,6 @@
         "type": "run",
         "desc": "trivy",
         "cmd": "sudo trivy"
-    }  
+    }
+           
 }
