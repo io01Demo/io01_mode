@@ -11,6 +11,12 @@
         "cmd": "sh ./io01_update.sh"
     },
 
+    "showcommands": {
+        "type": "run",
+        "desc": "Update  kadabra", 
+        "cmd": "cat ./home/IO01DEMO/io01/kadabra/io01_mode/cloudCommands.json"
+    },
+
       "sublist3r": {
         "type": "run",
         "desc": "Use Sublist3r to find subdomains INPUT:[target_website]",
