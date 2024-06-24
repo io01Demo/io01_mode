@@ -46,9 +46,10 @@
       "domain-info": {
         "type": "run",
         "desc": "translte domain to ip and get info from ipinfo.io <ouputfile.ipinfo>",
-        "cmd": "sudo sh ./domain_ip_info.sh unc1549_c2_domains.txt"
+        "cmd": "sudo sh ./third_party/unc1549/demo/domain_ip_info.sh unc1549_c2_domains.txt"
     },
 
+     
   "dig": {
         "type": "run",
         "desc": "dns lookup using dig",
@@ -57,7 +58,7 @@
   "createfile": {
         "type": "run",
         "desc": "create a floder BringThemeHomeNow with relvant files based on UNC1549",
-        "cmd": "sudo ./create_files.sh UNC1549Files.txt"
+        "cmd": "sudo sh ./third_party/unc1549/demo/create_files.sh UNC1549Files.txt"
     },
        "yara": {
         "type": "run",
