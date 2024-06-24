@@ -45,8 +45,8 @@
      
       "domain-info": {
         "type": "run",
-        "desc": "translte domain to ip and get info from ipinfo.io <ouputfile.ipinfo>",
-        "cmd": "sudo sh ./third_party/unc1549/demo/domain_ip_info.sh unc1549_c2_domains.txt"
+        "desc": "translte domain to ip and get info from ipinfo.io",
+        "cmd": "sudo sh ./third_party/unc1549/demo/domain_ip_info.sh unc1549_c2_domains.txt out_c2.json"
     },
 
      
