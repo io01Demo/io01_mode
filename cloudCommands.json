@@ -25,8 +25,8 @@
 
    "OSimage": {
         "type": "run",
-        "desc": "curl <URL>",
-        "cmd": "sudo  lsb_release -a"
+        "desc": "OS details",
+        "cmd": "lsb_release -a"
     },
            
       "domain-info": {
