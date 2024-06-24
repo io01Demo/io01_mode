@@ -63,5 +63,10 @@
         "type": "run",
         "desc": "run yara",
         "cmd": "sudo yara"
+    },
+         "trivy": {
+        "type": "run",
+        "desc": "trivy",
+        "cmd": "sudo trivy"
     }  
 }
