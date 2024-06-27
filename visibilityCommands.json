@@ -1,1 +1,63 @@
+   {
+    "io01_ver": {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "echo Cloud 1.0.1"
+    },
 
+    "io01_update": {
+        "type": "run",
+        "desc": "Update  kadabra", 
+        "cmd": "sh ./io01_update.sh"
+    },
+      
+     "IPinfo": {
+        "type": "run",
+        "desc": "ipinfo", 
+        "cmd": "curl -s https://ipinfo.io/"
+    },
+      
+ "getIPfromDomain": {
+        "type": "run",
+        "desc": "translte ip domain name to ip address", 
+        "cmd": "dig +short"
+    },
+      
+
+   "OSimage": {
+        "type": "run",
+        "desc": "OS details",
+        "cmd": "lsb_release -a"
+    },
+           
+      "domain-info": {
+        "type": "run",
+        "desc": "translte domain to ip and get info from ipinfo.io about UNC1549",
+        "cmd": "sudo sh ./third_party/unc1549/demo/domain_ip_info.sh ./third_party/unc1549/demo//unc1549_c2_domains.txt ./third_party/unc1549/demo/out_c2.json"
+    },
+
+     
+  "dig": {
+        "type": "run",
+        "desc": "dns lookup using dig",
+        "cmd": "sudo dig"
+    },
+        
+       "yara": {
+        "type": "run",
+        "desc": "run yara",
+        "cmd": "sudo yara"
+    },
+         "trivy": {
+        "type": "run",
+        "desc": "trivy",
+        "cmd": "sudo trivy"
+    },
+      
+         "curl": {
+        "type": "run",
+        "desc": "curl <URL>",
+        "cmd": "sudo curl"
+    }
+           
+}
