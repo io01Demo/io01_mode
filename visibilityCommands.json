@@ -2,7 +2,7 @@
     "io01_ver": {
         "type": "run",
         "desc": "Show kadabra commands help", 
-        "cmd": "echo Cloud 1.0.1"
+        "cmd": "echo Visibility 1.0.0"
     },
 
     "io01_update": {
@@ -15,6 +15,13 @@
         "type": "run",
         "desc": "ipinfo", 
         "cmd": "curl -s https://ipinfo.io/"
+    },
+	   
+    "sysinfo": 
+    {
+        "type": "run",
+        "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint <target_ip>", 
+        "cmd": "sudo nmap -O -v"
     },
       
  "getIPfromDomain": {
