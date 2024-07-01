@@ -72,7 +72,7 @@
     {
         "type": "run",
         "desc": "Discover Network Interfaces", 
-        "cmd": 	"sudo sh ./third_party/network_interfaces_ifocnfig.sh"
+        "cmd": 	"sudo sh ./third_party/network_interfaces_ifconfig.sh"
     },
 	   
  "port-scan-JSON": 
