@@ -59,7 +59,7 @@
     "xsstrike": {
         "type": "run",
         "desc": "Scan the target website for XSS:[target_website]",
-        "cmd": "python3 ./downloads/XSStrike/xsstrike.py -u"
+        "cmd": "python3 ./third_party/XSStrike/xsstrike.py -u"
     },
 
  "drupwn": {
