@@ -65,7 +65,7 @@
  "drupwn": {
         "type": "run",
         "desc": "Scan Drupal website for Drupal exploits:[target_website]",
-        "cmd": "python3 ./downloads/drupwn/drupwn --mode enum --target"
+        "cmd": "python3 ./third_party/drupwn/drupwn --mode enum --target"
     },
 
 
