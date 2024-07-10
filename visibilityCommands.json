@@ -2,7 +2,7 @@
     "io01_ver": {
         "type": "run",
         "desc": "Show kadabra commands help", 
-        "cmd": "echo Visibility 1.0.2"
+        "cmd": "echo Visibility 1.0.3"
     },
 
     "io01_update": {
