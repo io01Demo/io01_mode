@@ -10,7 +10,21 @@
         "desc": "Update  kadabra", 
         "cmd": "sh ./io01_update.sh"
     },
-      
+     "self_discover": {
+        "type": "run",
+        "desc": "Detects local network interfaces, internal IP address, external IP address and gateways", 
+        "cmd": "sudo ./third_party/self_discover.sh"
+    },
+	"passive_scan": {
+        "type": "run",
+        "desc": "Sniff local network [interface] for a [duration] and provides basic information", 
+        "cmd": "sudo ./third_party/passive_scan_sniff.sh"
+    },
+	"arp_scan": {
+        "type": "run",
+        "desc": "Use arp scan to map [network]", 
+        "cmd": "sudo ./third_party/nmapio_arp.sh"
+    },
      "IPinfo": {
         "type": "run",
         "desc": "ipinfo", 
