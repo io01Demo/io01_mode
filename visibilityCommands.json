@@ -40,8 +40,8 @@
   "getCVE": 
     {
         "type": "run",
-        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <vendor> <product> <outputfile.json>", 
-        "cmd": "sudo ./third_party/nvd.sh"
+        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
+        "cmd": "curl https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName="
     },
 	   
      "localOSimage": {
