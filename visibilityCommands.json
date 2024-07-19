@@ -2,7 +2,7 @@
     "io01_ver": {
         "type": "run",
         "desc": "Show kadabra commands help", 
-        "cmd": "echo Visibility 1.0.3"
+        "cmd": "echo Visibility 1.0.4"
     },
 
     "io01_update": {
@@ -30,37 +30,26 @@
         "desc": "ipinfo", 
         "cmd": "curl -s https://ipinfo.io/"
     },
-	      "arp": {
-        "type": "run",
-        "desc": "arp command", 
-        "cmd": "arp"
-    },
 	   
-    "sysinfo": 
+    "getCPE": 
     {
         "type": "run",
         "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint <target_ip>", 
-        "cmd": "sudo nmap -O -v"
+        "cmd": "sudo nmap -sV -O"
     },
-      
- "getIPfromDomain": {
+  "getCVE": 
+    {
         "type": "run",
-        "desc": "translte ip domain name to ip address", 
-        "cmd": "dig +short"
+        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <vendor> <product> <outputfile.json>", 
+        "cmd": "sudo ./third_party/nvd.sh"
     },
-      
-
-   "OSimage": {
+	   
+     "localOSimage": {
         "type": "run",
         "desc": "OS details",
         "cmd": "lsb_release -a"
     },
            
-      "domain-info": {
-        "type": "run",
-        "desc": "translte domain to ip and get info from ipinfo.io about UNC1549",
-        "cmd": "sudo sh ./third_party/unc1549/demo/domain_ip_info.sh ./third_party/unc1549/demo//unc1549_c2_domains.txt ./third_party/unc1549/demo/out_c2.json"
-    },
   "sniff": 
     {
         "type": "run",
@@ -68,37 +57,17 @@
         "cmd": "sudo python3  ./third_party/sniffer.py"
     },
 	
-	  "NVDcve": 
-    {
-        "type": "run",
-        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <vendor> <product> <outputfile.json>", 
-        "cmd": "sudo ./third_party/nvd.sh"
-    },
-	   
    "ifconfig": 
     {
         "type": "run",
         "desc": "View Local Network Interfaces--> get_local_interface", 
         "cmd": "sudo ifconfig"
     }, 
-	   "port-scan": 
-    {
-        "type": "run",
-        "desc": "discover.T1595.001: Active port scan using Nmap", 
-        "cmd": 	"sudo nmap -Pn -sT --scan-delay 1s -p 80,102,443,502,530,593,789,1089-1091,1911,1962,2222,2404,4000,4840,4843,4911,9600,19999,20000,20547,34962-34964,34980,44818,46823,46824,55000-55003"
-    },
  "getInterfaces": 
     {
         "type": "run",
         "desc": "Discover Network Interfaces", 
         "cmd": 	"sudo ./third_party/network_interfaces_ifconfig.sh"
-    },
-	   
- "port-scan-JSON": 
-    {
-        "type": "run",
-        "desc": "discover.T1595.001: Active port scan using Nmap PARAMS <IP,Output File>", 
-        "cmd": 	"sudo ./third_party/nmapio.sh"
     },
 	   "S7-scan": 
     {
