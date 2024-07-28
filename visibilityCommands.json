@@ -28,7 +28,7 @@
 	"get_ports": {
         "type": "run",
         "desc": "port_scan a network Usage: get_ports  <target_network>", 
-        "cmd": "sudo ./third_party/ports_scan.sh -n"
+        "cmd": "sudo ./third_party/ports_scan.sh"
     },   
 	
 	"get_port_info": {
