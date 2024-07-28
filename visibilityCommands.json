@@ -25,6 +25,12 @@
         "desc": "Use arp scan to map [network]", 
         "cmd": "sudo ./third_party/nmapio_arp.sh"
     },
+	"get_ports": {
+        "type": "run",
+        "desc": "port_scan a network Usage: get_ports  <target_network>", 
+        "cmd": "sudo ./third_party/ports_scan.sh -n"
+    },   
+	
 	"get_port_info": {
         "type": "run",
         "desc": "Get port info [target_ip] [target_port] [protocol] ", 
