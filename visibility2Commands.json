@@ -23,7 +23,7 @@
 	"arp_scan": {
         "type": "run",
         "desc": "Use arp scan to map [network]", 
-        "cmd": "sudo ./third_party/nmapio_arp.sh"
+        "cmd": "python3 ./third_party/arp_scan.py"
     },
      "IPinfo": {
         "type": "run",
