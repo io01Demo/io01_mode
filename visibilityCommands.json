@@ -48,7 +48,13 @@
         "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint <target_ip>", 
         "cmd": "sudo nmap -sV -O"
     },
-  "getCVE": 
+   "get_cpe_name": 
+    {
+        "type": "run",
+        "desc": "get CPE_name based on keywords <keyword1,keyboard2,...", 
+        "cmd": "curl https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName="
+    },
+	"getCVE": 
     {
         "type": "run",
         "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
