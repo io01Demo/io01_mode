@@ -45,7 +45,7 @@
     "getCPE": 
     {
         "type": "run",
-        "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint <target_ip>", 
+        "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint [target_ip]", 
         "cmd": "sudo nmap -sV -O"
     },
    "get_cpe_name": 
