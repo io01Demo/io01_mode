@@ -1,0 +1,110 @@
+{
+    "io01_ver": 
+    {
+        "type": "run",
+        "desc": "Show kadabra test commands help", 
+        "cmd": "echo 1.0.1.1"
+    },
+    "io01_update": 
+    {
+        "type": "run",
+        "desc": "Update kadabra commands", 
+        "cmd": "sh ./io01_update.sh"
+    },
+    "display_kernel_mesgs": 
+    {
+        "type": "run",
+        "desc": "Try it yourself", 
+        "cmd": "sudo dmsg"
+    },
+    "dmesg_real_time": 
+    {
+        "type": "run",
+        "desc": "Try it yourself", 
+        "cmd": "sudo dmsg -w"
+    },
+    "read_logs_file": 
+    {
+        "type": "run",
+        "desc": "Continuously displays logs input:[log file path/name]", 
+        "cmd": "sudo tail -f"
+    },
+    "view_service_logs": 
+    {
+        "type": "run",
+        "desc": "Displays the systemd journal entries for a specific service. ex. input: [sshd.service]", 
+        "cmd": "sudo journalctl -u"
+    },
+    "get_all_processes": 
+    {
+        "type": "run",
+        "desc": "Displays information about all running processes on the system", 
+        "cmd": "sudo ps aux"
+    },
+    "get_process_x": 
+    {
+        "type": "run",
+        "desc": "Searches for specific processes among all running processes.input:[process name]", 
+        "cmd": "sudo ps aux | grep"
+    },
+    "kill_process": 
+    {
+        "type": "run",
+        "desc": "Terminates a running process.input: [PID]", 
+        "cmd": "sudo kill"
+    },
+    "service_manage": 
+    {
+        "type": "run",
+        "desc": "Manages system services and processes.input:[start][stop][restart][enable][disable][status] ex. [httpd.service]", 
+        "cmd": "sudo systemctl"
+    },
+    "service_start_stop": 
+    {
+        "type": "run",
+        "desc": "Manages system services and processes.input:[start][stop][restart] myapp.service", 
+        "cmd": "sudo systemctl"
+    },
+    "net_interface_up_down": 
+    {
+        "type": "run",
+        "desc": "input: [interface name, up/down] ex.: eth0 up ", 
+        "cmd": "sudo ip link set"
+    },
+    "get_interface_status": 
+    {
+        "type": "run",
+        "desc": "input: [interface name, up/down]", 
+        "cmd": "sudo ip link"
+    },
+    "show_route_table": 
+    {
+        "type": "run",
+        "desc": "", 
+        "cmd": "sudo ip route"
+    },
+    "display_all_sockets": 
+    {
+        "type": "run",
+        "desc": "", 
+        "cmd": "sudo ss -a"
+    },
+    "display_sockets_to_ip": 
+    {
+        "type": "run",
+        "desc": "input:[ip]", 
+        "cmd": "sudo ss -a dst"
+    },
+    "display_sockets_to_site": 
+    {
+        "type": "run",
+        "desc": "input:[ip or domain]", 
+        "cmd": "sudo ss -a dst"
+    },
+    "last_cmd": 
+    {
+        "type": "run",
+        "desc": "Try it yourself", 
+        "cmd": "echo Try it yourself - take a test drive"
+    }
+}
