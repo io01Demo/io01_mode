@@ -11,11 +11,11 @@
         "desc": "Update kadabra commands", 
         "cmd": "sh ./io01_update.sh"
     },
-    "display_kernel_mesgs": 
+    "show_kernel_msg": 
     {
         "type": "run",
-        "desc": "Try it yourself", 
-        "cmd": "sudo dmsg"
+        "desc": "displays kernel messages", 
+        "cmd": "sudo dmesg"
     },
     "dmesg_real_time": 
     {
