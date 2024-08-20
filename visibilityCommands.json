@@ -10,7 +10,7 @@
         "desc": "Update  kadabra", 
         "cmd": "sh ./io01_update.sh"
     },
-    "3rparty_update": {
+    "3rdparty_update": {
         "type": "run",
         "desc": "Update  kadabra", 
         "cmd": "sh ./io3rdparty_update.sh"
