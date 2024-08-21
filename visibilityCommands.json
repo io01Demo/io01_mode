@@ -73,7 +73,7 @@
    {
         "type": "interactive",
         "desc": "picocom /dev/ttyUSB0 -b 115200 -c", 
-        "cmd": "picocom"
+        "cmd": "sudo picocom"
     },
 
 	   
