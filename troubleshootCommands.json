@@ -101,10 +101,10 @@
         "desc": "input:[ip or domain]", 
         "cmd": "sudo ss -a dst"
     },
-    "last_cmd": 
+    "unix_format": 
     {
         "type": "run",
-        "desc": "Try it yourself", 
-        "cmd": "echo Try it yourself - take a test drive"
+        "desc": "dos2unix [filename]", 
+        "cmd": "dos2unix"
     }
 }
