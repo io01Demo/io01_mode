@@ -2,7 +2,7 @@
     "io01_ver": {
         "type": "run",
         "desc": "Show kadabra commands help", 
-        "cmd": "echo Visibility 1.0.5"
+        "cmd": "echo Visibility 1.0.6"
     },
 
     "io01_update": {
@@ -61,7 +61,13 @@
         "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
         "cmd": "curl https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName="
     },
-	   
+
+	"lsUSB": 
+    {
+        "type": "run",
+        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
+        "cmd": "udevadm info --query=all --name=/dev/ttyUSB0"
+    },
      "localOSimage": {
         "type": "run",
         "desc": "OS details",
