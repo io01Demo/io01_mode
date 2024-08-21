@@ -68,6 +68,15 @@
         "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
         "cmd": "udevadm info --query=all --name=/dev/ttyUSB0"
     },
+	   
+	"picocom":    
+   {
+        "type": "interactive",
+        "desc": "picocom /dev/ttyUSB0 -b 115200 -c", 
+        "cmd": "picocom"
+    },
+
+	   
      "localOSimage": {
         "type": "run",
         "desc": "OS details",
@@ -124,7 +133,7 @@
   
    "bacnet-scan": 
 	    {
-		"type": "interactive",
+		"type": "run",
 		"desc": "bacnet scan <target_ip>", 
 		"cmd": "sudo nmap -Pn -sU -p47808 --script bacnet-info"
 	    },
