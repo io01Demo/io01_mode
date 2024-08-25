@@ -24,7 +24,7 @@
 	"arp_scan": {
         "type": "run",
         "desc": "Use arp scan to map [network]", 
-        "cmd": "python3 ./third_party/arp_scan.py"
+        "cmd": "./third_party/nmapio_arp.sh"
     },
 	"get_ports": {
         "type": "run",
