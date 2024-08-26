@@ -53,7 +53,7 @@
     {
         "type": "run",
         "desc": "get CPE_name based on keywords <keyword1,keyboard2,...", 
-        "cmd": "python3 ./thirdparty/get_cpe_name.py"
+        "cmd": "python3 ./third_party/get_cpe_name.py"
     },
 	"getCVE": 
     {
