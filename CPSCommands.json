@@ -50,14 +50,14 @@
     {
         "type": "run",
         "desc": "tcp dump utility --> tcpdump-i <interface> -s 65535 -w <file>", 
-        "cmd": "tcpdump"
+        "cmd": "sudo tcpdump"
     },
     
      "tshark": 
     {
         "type": "run",
         "desc": "thsark - Wireshark CLI version", 
-        "cmd": "tshark"
+        "cmd": "sudo tshark"
     },
     
     "scapy": 
