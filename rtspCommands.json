@@ -2,7 +2,7 @@
     "io01_ver": {
         "type": "run",
         "desc": "Show kadabra commands help", 
-        "cmd": "echo Visibility 1.0.6"
+        "cmd": "echo RTSP 1.0.6"
     },
 
     "io01_update": {
@@ -13,19 +13,19 @@
     "NetworkScan": 
     {
         "type": "run",
-        "desc": "STEP 1 - Network Scanning <target_ip>", 
+        "desc": "STEP 1 - Network Scanning [target_ip]", 
         "cmd": "sudo nmap -sP"
     },
     "RTSPScan": 
     {
         "type": "run",
-        "desc": "STEP 2 - Locate the RTSP Port <target_ip>", 
+        "desc": "STEP 2 - Locate the RTSP Port [target_ip]", 
         "cmd": "sudo nmap -p 554 --open"
     },
      "RTSPUrl": 
     {
         "type": "run",
-        "desc": "STEP 3 - Detailed Port Scanning <target_ip>", 
+        "desc": "STEP 3 - Detailed Port Scanning [target_ip]", 
         "cmd": "sudo nmap --script rtsp-url-brute -p 554" 
     },
      "screen": 
@@ -38,20 +38,20 @@
     "getCPE": 
     {
         "type": "run",
-        "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint [target_ip]", 
+        "desc": "NVD Common Platform enum [target_ip]", 
         "cmd": "sudo nmap -sV -O"
     },
    	"getCVE": 
     {
         "type": "run",
-        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
+        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params [CPE Name]", 
         "cmd": "curl https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName="
     },
 
 	"lsUSB": 
     {
         "type": "run",
-        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
+        "desc": "USB device info", 
         "cmd": "udevadm info --query=all --name=/dev/ttyUSB0"
     },
 	   
@@ -69,13 +69,6 @@
         "cmd": "lsb_release -a"
     },
            
-  "sniff": 
-    {
-        "type": "run",
-        "desc": "Sniff traffic into PCAP file. Params <network_interface> <output_pcap_file> <number_of_packets>", 
-        "cmd": "sudo python3  ./third_party/sniffer.py"
-    },
-	
    "ifconfig": 
     {
         "type": "run",
