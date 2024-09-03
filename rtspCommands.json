@@ -1,0 +1,85 @@
+   {
+    "io01_ver": {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "echo Visibility 1.0.6"
+    },
+
+    "io01_update": {
+        "type": "run",
+        "desc": "Update  kadabra", 
+        "cmd": "sh ./io01_update.sh"
+    },
+    "NetworkScan": 
+    {
+        "type": "run",
+        "desc": "STEP 1 - Network Scanning <target_ip>", 
+        "cmd": "sudo nmap -sP"
+    },
+    "RTSPScan": 
+    {
+        "type": "run",
+        "desc": "STEP 2 - Locate the RTSP Port <target_ip>", 
+        "cmd": "sudo nmap -p 554 --open"
+    },
+     "RTSPUrl": 
+    {
+        "type": "run",
+        "desc": "STEP 3 - Detailed Port Scanning <target_ip>", 
+        "cmd": "sudo nmap --script rtsp-url-brute -p 554" 
+    },
+     "screen": 
+    {
+        "type": "run",
+        "desc": "STEP 4 - Monitoring the Bootloader at 115200 /dev/tty/usb0 ❗use bus pirate", 
+        "cmd": "sudo screen /dev/ttyUSB0 115200"
+    },
+     
+    "getCPE": 
+    {
+        "type": "run",
+        "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint [target_ip]", 
+        "cmd": "sudo nmap -sV -O"
+    },
+   	"getCVE": 
+    {
+        "type": "run",
+        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
+        "cmd": "curl https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName="
+    },
+
+	"lsUSB": 
+    {
+        "type": "run",
+        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
+        "cmd": "udevadm info --query=all --name=/dev/ttyUSB0"
+    },
+	   
+	"picocom":    
+   {
+        "type": "interactive",
+        "desc": "picocom /dev/ttyUSB0 -b 115200 -c", 
+        "cmd": "sudo picocom"
+    },
+
+	   
+     "localOSimage": {
+        "type": "run",
+        "desc": "OS details",
+        "cmd": "lsb_release -a"
+    },
+           
+  "sniff": 
+    {
+        "type": "run",
+        "desc": "Sniff traffic into PCAP file. Params <network_interface> <output_pcap_file> <number_of_packets>", 
+        "cmd": "sudo python3  ./third_party/sniffer.py"
+    },
+	
+   "ifconfig": 
+    {
+        "type": "run",
+        "desc": "View Local Network Interfaces--> get_local_interface", 
+        "cmd": "sudo ifconfig"
+    } 
+}
