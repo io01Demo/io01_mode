@@ -59,7 +59,7 @@
     {
         "type": "run",
         "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
-        "cmd": ""sudo ./third_party/get_cve_by_cpe"
+        "cmd": "sudo ./third_party/get_cve_by_cpe"
     },
 
 	"lsUSB": 
