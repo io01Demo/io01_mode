@@ -52,8 +52,15 @@
    "get_cpe_name": 
     {
         "type": "run",
-        "desc": "get CPE_name based on keywords <keyword1,keyboard2,...", 
+        "desc": "chatGPT conversation", 
         "cmd": "python3 ./third_party/get_cpe_name.py"
+    },
+   "chat": 
+    {
+        "type": "run",
+        "desc": "get CPE_name based on keywords <keyword1,keyboard2,...", 
+        "cmd": "python3 ./third_party/pychat.py"
+	    
     },
 	"getCVE": 
     {
