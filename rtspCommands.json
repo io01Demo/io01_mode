@@ -30,7 +30,7 @@
     },
      "screen": 
     {
-        "type": "run",
+        "type": "interactive",
         "desc": "STEP 4 - Monitoring the Bootloader at 115200 /dev/tty/usb0 ❗use bus pirate", 
         "cmd": "sudo screen /dev/ttyUSB0 115200"
     },
