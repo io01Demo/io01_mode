@@ -26,6 +26,11 @@
         "desc": "Use arp scan to map [network]", 
         "cmd": "./third_party/nmapio_arp.sh"
     },
+	   "pingSweep": {
+        "type": "run",
+        "desc": "Ping Sweep Discovery", 
+        "cmd": "./pingSweep.sh"
+    },
 	"get_ports": {
         "type": "run",
         "desc": "port_scan a network Usage: get_ports  <target_network>", 
