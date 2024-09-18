@@ -69,6 +69,14 @@
         "cmd": "sudo ./third_party/get_cve_by_cpe.sh"
     },
 
+ "InspectTraffic": 
+    {
+        "type": "interactive",
+        "desc": "Inspect Modbus and SIP Traffic", 
+        "cmd": "sudo python3 ./third_party/inspectTraffic.py"
+	    
+    },	   
+
 	"lsUSB": 
     {
         "type": "run",
