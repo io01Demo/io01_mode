@@ -29,7 +29,7 @@
 	   "pingSweep": {
         "type": "run",
         "desc": "Ping Sweep Discovery", 
-        "cmd": "./pingSweep.sh"
+        "cmd": "./third_party/pingSweep.sh"
     },
 	"get_ports": {
         "type": "run",
