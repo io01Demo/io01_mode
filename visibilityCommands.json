@@ -89,6 +89,13 @@
 	    
     },	   
 
+"tshark": 
+    {
+        "type": "run",
+        "desc": "get real time traffic using tshark", 
+        "cmd": "tshark -l -T json -i any -V"
+    },
+
 	"lsUSB": 
     {
         "type": "run",
