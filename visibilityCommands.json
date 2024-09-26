@@ -81,14 +81,7 @@
         "cmd": "sudo python3 ./third_party/inspectTraffic.py"
 	    
     },	  
- "ExtractLinuxIdentities": 
-    {
-        "type": "interactive",
-        "desc": "extract identities from MDOCBUS,SIP,CIP,SSH,briadcast and more", 
-        "cmd": "sudo python3 ./third_party/ExtractLinuxIdentities.py"
-	    
-    },	   
-
+ 
 "tshark": 
     {
         "type": "run",
