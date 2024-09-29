@@ -85,7 +85,8 @@
     {
         "type": "run",
         "desc": "get Vendor from mac address <MAC>", 
-        "cmd": "sudo curl -s https://api.macvendors.com/"
+        "cmd": "curl -G "https://api.macvendors.com/v1/lookup/$1" \
+    -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImp0aSI6IjA5MDYwM2EwLWI2M2YtNGZhYS1hYzM2LWU0MzAwMWQ2MzhjYSJ9.eyJpc3MiOiJtYWN2ZW5kb3JzIiwiYXVkIjoibWFjdmVuZG9ycyIsImp0aSI6IjA5MDYwM2EwLWI2M2YtNGZhYS1hYzM2LWU0MzAwMWQ2MzhjYSIsImlhdCI6MTcyNzYyMDMzMSwiZXhwIjoyMDQyMTE2MzMxLCJzdWIiOiIxNDk4OCIsInR5cCI6ImFjY2VzcyJ9.lEQ4I21ut6L5x2voVX_nis2daqpJ9ZBZ30tagEbYpMR-j2GoCMaqUTNLH55laTnO-DAkZavhFZc5yuqYHEMIFA""
     },
  
 "tshark": 
