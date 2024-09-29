@@ -57,7 +57,7 @@
    "get_cpe_name": 
     {
         "type": "run",
-        "desc": "chatGPT conversation", 
+        "desc": "Get CPE name", 
         "cmd": "python3 ./third_party/get_cpe_name.py"
     },
    "chat": 
@@ -81,6 +81,12 @@
         "cmd": "sudo python3 ./third_party/inspectTraffic.py"
 	    
     },	  
+"GetVendor": 
+    {
+        "type": "run",
+        "desc": "get Vendor from mac address <MAC>", 
+        "cmd": "sudo curl -s https://api.macvendors.com/"
+    },
  
 "tshark": 
     {
