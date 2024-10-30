@@ -17,7 +17,7 @@ sudo nmap -Pn -sT --scan-delay 1s -p 80,102,443,502,530,593,789,1089-1091,1911,1
 echo "[+] converting to JSON"
 
 python3 nmappy.py $filename tmpJS.json
-cat tmpJS.json
+#cat tmpJS.json
 #rm tmpJS.json
 #cat $filename
 #rm $filename
