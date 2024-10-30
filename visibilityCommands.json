@@ -42,6 +42,11 @@
         "desc": "Get port info [target_ip] [target_port] [protocol] ", 
         "cmd": "sudo ./third_party/get_info_cpsx.sh"
     },   
+	"OS Detection": {
+        "type": "run",
+        "desc": "Get OS info [target_ip] ", 
+        "cmd": "sudo ./third_party/OSdetect.sh"
+    },   
      "IPinfo": {
         "type": "run",
         "desc": "ipinfo", 
