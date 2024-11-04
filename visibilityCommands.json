@@ -68,11 +68,12 @@
    "chat": 
     {
         "type": "interactive",
-        "desc": "Ask anythingm no data sent to server", 
-        "cmd": "python3 ./third_party/simplechat.py"
+        "desc": "Ask anything - Retrieval Augmented Generation(RAG)", 
+        "cmd": "python3 ./third_party/ragChat.py"
 	    
     },
-	"getCVE": 
+   
+    "getCVE": 
     {
         "type": "run",
         "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
