@@ -92,6 +92,12 @@
         "desc": "get Vendor from mac address <MAC>", 
         "cmd": "sudo ./third_party/getVendorFromCVE.sh" 
     },
+"getNCM": 
+    {
+        "type": "run",
+        "desc": "get Vendor from mac address <MAC>", 
+        "cmd": "sudo python3 ./third_party/getNCM.py" 
+    },
  
 "tshark": 
     {
