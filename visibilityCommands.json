@@ -69,7 +69,7 @@
     {
         "type": "interactive",
         "desc": "Ask anything - Retrieval Augmented Generation(RAG)", 
-        "cmd": "python3 ./third_party/ragChat.py"
+        "cmd": "python3 ./third_party/simplechat.py"
 	    
     },
    
