@@ -68,7 +68,7 @@
    "chat": 
     {
         "type": "interactive",
-        "desc": "Ask anything - Retrieval Augmented Generation(RAG)", 
+        "desc": "Ask anything - simple chat", 
         "cmd": "python3 ./third_party/simplechat.py"
 	    
     },
@@ -77,6 +77,13 @@
         "type": "interactive",
         "desc": "Ask anything - Retrieval Augmented Generation(RAG)", 
         "cmd": "python3 ./third_party/ragChat.py"
+	    
+    },
+ "getTraffic": 
+    {
+        "type": "run",
+        "desc": "get traffic info <duration>", 
+        "cmd": "sudo python3 ./third_party/getEncryptedTraffic.py"
 	    
     },
    
