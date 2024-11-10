@@ -65,6 +65,12 @@
         "desc": "cat ./data/upload/ics-attack.json", 
         "cmd": "cat ./data/upload/ics-attack.json"
     },
+    "get_ports_commands":
+	   {
+        "type": "run",
+        "desc": "cat ./data/upload/port_list.json", 
+        "cmd": "cat ./data/upload/port_list.json"
+    },
    "get_cpe_name": 
     {
         "type": "run",
