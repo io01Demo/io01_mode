@@ -59,6 +59,12 @@
         "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint [target_ip]", 
         "cmd": "sudo nmap -sV -O"
     },
+    "get_mitre_ics":
+	   {
+        "type": "run",
+        "desc": "cat ./data/upload/ics-attack.json", 
+        "cmd": "cat ./data/upload/ics-attack.json"
+    },
    "get_cpe_name": 
     {
         "type": "run",
