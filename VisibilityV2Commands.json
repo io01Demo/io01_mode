@@ -232,6 +232,7 @@
         "type": "run",
         "desc": "Get DMESG and Audit logs",
         "cmd": "./third_party/get_local_dmesg_audit.sh"
+    },
     "curl": {
         "aliases": [],
         "type": "run",
