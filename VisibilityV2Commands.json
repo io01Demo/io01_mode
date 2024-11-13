@@ -227,7 +227,7 @@
         "desc": "Run trivy vulnerability scanner",
         "cmd": "sudo trivy"
     },
-    "get_dmseg_audit": {
+    "get_dmesg_audit": {
         "aliases": [],
         "type": "run",
         "desc": "Get DMESG and Audit logs",
