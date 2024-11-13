@@ -1,43 +1,4 @@
 {
-    "metadata": {
-        "dictionary_name": "Visibility",
-        "version": "1.0.0",
-        "created_by": "IO01",
-        "create_time": "",
-        "last_update": "",
-        "description": "This dictionary facilitates network and device visibility through various scans, detections, and retrieval commands.",
-        "tags": ["network", "visibility", "discovery", "scanning"],
-        "keywords": ["arp scan", "ping sweep", "OS detection", "port scanning", "device metrics", "network interfaces"],
-        "license": "",
-        "source_repository": "",
-        "documentation_url": ""
-    },
-    
-    "requirements": {
-        "pre_installed_tools": ["curl", "nmap", "python3", "tshark", "ifconfig", "dig", "yara", "trivy", "picocom"],
-        "libraries": [],
-        "scripts": [
-            "./io01_update.sh",
-            "./third_party/self_discover.sh",
-            "./third_party/passive_scan_sniff.sh",
-            "./third_party/nmapio_arp.sh",
-            "./third_party/pingSweep.sh",
-            "./third_party/ports_scan.sh",
-            "./third_party/get_info_cpsx.sh",
-            "./third_party/OSdetect.sh",
-            "./third_party/get_cpe_name.py",
-            "./third_party/simplechat.py",
-            "./third_party/ragChat.py",
-            "./third_party/getEncryptedTraffic.py",
-            "./third_party/get_cve_by_cpe.sh",
-            "./third_party/inspectTraffic.py",
-            "./third_party/getVendorFromCVE.sh",
-            "./third_party/getNCM.py",
-            "./third_party/sniffer.py",
-            "./third_party/network_interfaces_ifconfig.sh"
-        ]
-    },
-
     "io01_ver": {
         "aliases": [],
         "type": "run",
@@ -143,7 +104,7 @@
     "getCVE": {
         "aliases": [],
         "type": "run",
-        "desc": "Retrieve CVEs from NATIONAL VULNERABILITY DATABASE, params <cpeName>",
+        "desc": "Retrieve CVEs from NVD, params <cpeName>",
         "cmd": "sudo ./third_party/get_cve_by_cpe.sh"
     },
     "InspectTraffic": {
@@ -161,7 +122,7 @@
     "getNCM": {
         "aliases": [],
         "type": "run",
-        "desc": "Retrieve Vendor from MAC address <MAC>",
+        "desc": "list No-Code Module commands",
         "cmd": "sudo python3 ./third_party/getNCM.py"
     },
     "tshark": {
@@ -266,6 +227,11 @@
         "desc": "Run trivy vulnerability scanner",
         "cmd": "sudo trivy"
     },
+    "get_dmseg_audit": {
+        "aliases": [],
+        "type": "run",
+        "desc": "Get DMESG and Audit logs",
+        "cmd": "./third_party/get_local_dmesg_audit.sh"
     "curl": {
         "aliases": [],
         "type": "run",
