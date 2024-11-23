@@ -21,6 +21,11 @@
         "desc": "Sniff local network [interface] for a [duration] and provides basic information", 
         "cmd": "sudo ./third_party/passive_scan_sniff.sh"
     },
+"netdiscover": {
+        "type": "run",
+        "desc": "Monitor all systems, devices, traffic [network]", 
+        "cmd": "sudo netdiscover -L -s 1 -r "
+    },
 	"arp_scan": {
         "type": "run",
         "desc": "Use arp scan to map [network]", 
@@ -87,8 +92,8 @@
  "RAGchat": 
     {
         "type": "interactive",
-        "desc": "Ask anything - Retrieval Augmented Generation(RAG)", 
-        "cmd": "python3 ./third_party/ragChat.py"
+        "desc": "Ask anything - Retrieval Augmented Generation(RAG) based on Kadabra knowlege", 
+        "cmd": "sudo node ./third_party/RAGchat/ragChat.js"
 	    
     },
  "getTraffic": 
