@@ -1,0 +1,92 @@
+   {
+    "io01_ver": {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "echo Visibility 1.0.6"
+    },
+
+    "io01_update": {
+        "type": "run",
+        "desc": "Update  kadabra", 
+        "cmd": "sh ./io01_update.sh"
+    },
+     "IPinfo": {
+        "type": "run",
+        "desc": "ipinfo", 
+        "cmd": "curl -s https://ipinfo.io/"
+    },
+     
+    "get_file":
+	   {
+        "type": "run",
+        "desc": "get file from Infustion Service [File GUID,Local Path]", 
+        "cmd": "echo File XXXx was downloaded sucessfully [200 OK]"
+    }, 
+    "get_mitre_ics":
+	   {
+        "type": "run",
+        "desc": "cat ./data/upload/ics-attack.json", 
+        "cmd": "cat ./data/upload/ics-attack.json"
+    },
+   "chat": 
+    {
+        "type": "interactive",
+        "desc": "Ask anything - simple chat", 
+        "cmd": "python3 ./third_party/simplechat.py"
+	    
+    },
+ "RAGchat": 
+    {
+        "type": "interactive",
+        "desc": "Ask anything - Retrieval Augmented Generation(RAG) based on Kadabra knowlege", 
+        "cmd": "sudo node ./third_party/RAGchat/ragChat.js"
+	    
+    },
+"getNCM": 
+    {
+        "type": "run",
+        "desc": "get Vendor from mac address [MAC]", 
+        "cmd": "sudo python3 ./third_party/getNCM.py" 
+    },
+ 
+"tshark": 
+    {
+        "type": "run",
+        "desc": "get real time traffic using tshark", 
+        "cmd": "tshark -l -T json -i any -V"
+    },
+   
+     "localOSimage": {
+        "type": "run",
+        "desc": "OS details",
+        "cmd": "lsb_release -a"
+    },
+           
+  "sniff": 
+    {
+        "type": "run",
+        "desc": "Sniff traffic into PCAP file. Params <network_interface> <output_pcap_file> <number_of_packets>", 
+        "cmd": "sudo python3  ./third_party/sniffer.py"
+    },
+	
+   "ifconfig": 
+    {
+        "type": "run",
+        "desc": "View Local Network Interfaces--> get_local_interface", 
+        "cmd": "sudo ifconfig"
+    }, 
+ "getInterfaces": 
+    {
+        "type": "run",
+        "desc": "Discover Network Interfaces", 
+        "cmd": 	"sudo ./third_party/network_interfaces_ifconfig.sh"
+    },
+	
+      
+         "curl": {
+        "type": "run",
+        "desc": "curl <URL>",
+        "cmd": "sudo curl"
+    }
+           
+}
