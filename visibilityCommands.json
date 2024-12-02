@@ -64,19 +64,7 @@
         "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint [target_ip]", 
         "cmd": "sudo nmap -sV -O"
     },
-    "modbus_traffic_normal":
-	   {
-        "type": "run",
-        "desc": "cat ./data/upload/modbus_traffic_normal.json", 
-        "cmd": "cat ./data/upload/modbus_traffic_normal.json"
-    },
-	   "modbus_traffic_mitm":
-	   {
-        "type": "run",
-        "desc": "cat ./data/upload/modbus_traffic_mitm.json", 
-        "cmd": "cat ./data/upload/modbus_traffic_mitm.json"
-    },
-	   
+   
 	    "get_mitre_ics":
 	   {
         "type": "run",
