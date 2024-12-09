@@ -38,7 +38,7 @@
 	   {
         "type": "run",
         "desc": "brick_data_july_2024", 
-        "cmd": "cat ./data/upload/brick_data_july_2024.csv"
+        "cmd": "cat ./data/upload/brick_data.csv"
     },
    "chat": 
     {
