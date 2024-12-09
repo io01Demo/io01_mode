@@ -28,17 +28,17 @@
         "desc": "cat ./data/upload/ics-attack.json", 
         "cmd": "cat ./data/upload/ics-attack.json"
     },
-	    "bms_hvac":
+  "bms_hvac":
 	   {
         "type": "run",
         "desc": "add BMS HVAC telemetry", 
         "cmd": "cat ./data/upload/BMS=HVAC.csv"
     },
-	      "brick_data":
+"brick_data":
 	   {
         "type": "run",
-        "desc": "add BMS HVAC telemetry", 
-        "cmd": "cat ./data/upload/.csv"rick_data_july_2024"
+        "desc": "brick_data_july_2024", 
+        "cmd": "cat ./data/upload/.csv"
     },
    "chat": 
     {
