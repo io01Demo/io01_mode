@@ -47,6 +47,13 @@
         "cmd": "python3 ./third_party/simplechat.py"
 	    
     },
+	   "converpdf": 
+    {
+        "type": "run",
+        "desc": "convert pdf 2 text [file name]", 
+        "cmd": "python3 ./third_party/pdf2text.py"
+	    
+    },
  "RAGchat": 
     {
         "type": "interactive",
