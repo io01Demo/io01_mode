@@ -32,13 +32,13 @@
 	   {
         "type": "run",
         "desc": "add BMS HVAC telemetry", 
-        "cmd": "cat ./data/upload/BMS=HVAC.csv"
+        "cmd": "cat ./data/upload/BMS-HVAC.csv"
     },
 "brick_data":
 	   {
         "type": "run",
         "desc": "brick_data_july_2024", 
-        "cmd": "cat ./data/upload/.csv"
+        "cmd": "cat ./data/upload/brick_data_july_2024.csv"
     },
    "chat": 
     {
