@@ -108,8 +108,14 @@
     "getCVE": 
     {
         "type": "run",
-        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params [cpeName]", 
+        "desc": "get CVEs from NATIONAL VULNERABILITY DATABASE, params [cpeName]", 
         "cmd": "sudo ./third_party/get_cve_by_cpe.sh"
+    },
+"Vuln_scan": 
+    {
+        "type": "run",
+        "desc": "Scan for Vunerabilities using NMAP, params [IP]", 
+        "cmd": "sudo ./third_party/nmapio_vuln.sh"
     },
 
  "InspectTraffic": 
