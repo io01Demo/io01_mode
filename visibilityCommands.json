@@ -111,7 +111,7 @@
         "desc": "get CVEs from NATIONAL VULNERABILITY DATABASE, params [cpeName]", 
         "cmd": "sudo ./third_party/get_cve_by_cpe.sh"
     },
-"Vuln_scan": 
+"vuln_scan": 
     {
         "type": "run",
         "desc": "Scan for Vunerabilities using NMAP, params [IP]", 
