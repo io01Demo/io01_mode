@@ -47,7 +47,7 @@
         "cmd": "python3 ./third_party/simplechat.py"
 	    
     },
-	   "converpdf": 
+ "convertpdf": 
     {
         "type": "run",
         "desc": "convert pdf 2 text [file name]", 
