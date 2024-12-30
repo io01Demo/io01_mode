@@ -47,6 +47,13 @@
         "cmd": "python3 ./third_party/simplechat.py"
 	    
     },
+   "AzureChat": 
+    {
+        "type": "interactive",
+        "desc": "Ask anything - Azure Chat", 
+        "cmd": "python3 ./third_party/AzureAI.py"
+	    
+    },
  "convertpdf": 
     {
         "type": "run",
