@@ -54,6 +54,13 @@
         "cmd": "python3 ./third_party/AzureAI.py"
 	    
     },
+ "azure_rag_chat": 
+    {
+        "type": "interactive",
+        "desc": "Ask anything from you own data - Azure Chat", 
+        "cmd": "python3 ./third_party/AzureRAG.py"
+	    
+    },
  "convertpdf": 
     {
         "type": "run",
