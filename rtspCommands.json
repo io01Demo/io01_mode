@@ -13,25 +13,31 @@
     "NetworkScan": 
     {
         "type": "run",
-        "desc": "STEP 1 - Network Scanning [target_ip]", 
+        "desc": "Network Scanning [target_ip]", 
         "cmd": "sudo nmap -sP"
     },
     "RTSPScan": 
     {
         "type": "run",
-        "desc": "STEP 2 - Locate the RTSP Port [target_ip]", 
+        "desc": "Locate the RTSP Port [target_ip]", 
         "cmd": "sudo nmap -p 554 --open"
     },
      "RTSPUrl": 
     {
         "type": "run",
-        "desc": "STEP 3 - Detailed Port Scanning [target_ip]", 
+        "desc": "Detailed Port Scanning [target_ip]", 
         "cmd": "sudo nmap --script rtsp-url-brute -d -p 554" 
+    },
+  "hydra": 
+    {
+        "type": "run",
+        "desc": "Password Brute force  [hydra -l admin -P rockyou.txt 10.0.0.13 rtsp]", 
+        "cmd": "hydra" 
     },
      "screen": 
     {
         "type": "interactive",
-        "desc": "STEP 4 - Monitoring the Bootloader at 115200 /dev/tty/usb0 ❗use bus pirate", 
+        "desc": "Monitoring the Bootloader at 115200 /dev/tty/usb0 ❗use bus pirate", 
         "cmd": "sudo screen /dev/ttyUSB0 115200"
     },
      
