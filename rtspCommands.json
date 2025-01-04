@@ -34,6 +34,12 @@
         "desc": "Password Brute force  [hydra -l admin -P rockyou.txt 10.0.0.13 rtsp]", 
         "cmd": "hydra" 
     },
+ "GetVendor": 
+    {
+        "type": "run",
+        "desc": "get Vendor from mac address [MAC]", 
+        "cmd": "sudo ./third_party/getVendorFromCVE.sh" 
+    },
      "screen": 
     {
         "type": "interactive",
