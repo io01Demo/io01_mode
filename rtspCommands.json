@@ -26,7 +26,7 @@
     {
         "type": "run",
         "desc": "STEP 3 - Detailed Port Scanning [target_ip]", 
-        "cmd": "sudo nmap --script rtsp-url-brute -p 554" 
+        "cmd": "sudo nmap --script rtsp-url-brute -d -p 554" 
     },
      "screen": 
     {
