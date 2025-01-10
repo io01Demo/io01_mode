@@ -61,6 +61,13 @@
         "cmd": "python3 ./third_party/AzureRAG.py"
 	    
     },
+ "support_kai": 
+    {
+        "type": "interactive",
+        "desc": "Support KAI", 
+        "cmd": "python3 ./third_party/KAI_RAG.py"
+	    
+    },
  "convertpdf": 
     {
         "type": "run",
