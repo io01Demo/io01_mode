@@ -19,6 +19,13 @@
         "desc": "Show kadabra commands help 🚑", 
         "cmd": "cat CPSCommands.json"
     },
+ "ethersploit": 
+    {
+        "type": "interactive",
+        "desc": "exploit.T0866.001:Exploit Remote Service target-->ml1400_exploit <target_ip>", 
+        "cmd": "sudo ./third_party/ethersploitKadabra"
+    },
+	
  "p0f": 
     {
         "type": "run",
@@ -122,7 +129,7 @@
 	    {
 		"type": "interactive",
 		"desc": "exploit.T0866.001:Exploit Remote Service target-->ml1400_exploit <target_ip>", 
-		"cmd": "sudo ./bin/ethersploit"
+		"cmd": "sudo ./third_party/ethersploitKadabra"
 	    },
    "s01_10": 
 	    {
