@@ -21,7 +21,7 @@
     },
  "ethersploit": 
     {
-        "type": "interactive",
+        "type": "run",
         "desc": "exploit.T0866.001:Exploit Remote Service target-->ml1400_exploit <target_ip>", 
         "cmd": "sudo ./third_party/ethersploitKadabra"
     },
