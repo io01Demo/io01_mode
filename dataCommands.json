@@ -79,7 +79,7 @@
     {
         "type": "interactive",
         "desc": "Ask anything - Retrieval Augmented Generation(RAG) based on Kadabra knowlege", 
-        "cmd": "sudo node ./third_party/RAGchat/ragChat.js"
+        "cmd": "python3 ./third_party/ragChat.py"
 	    
     },
 "getNCM": 
