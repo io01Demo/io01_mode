@@ -16,6 +16,12 @@
         "desc": "Network Scanning [target_ip]", 
         "cmd": "sudo nmap -sP"
     },
+    "cam_net_scan": 
+    {
+        "type": "run",
+        "desc": "list Hosts with open RTSP or HTTP/S <target_network>", 
+        "cmd": "sudo nmap -p 80,443,554 -T4"
+    },
     "RTSPScan": 
     {
         "type": "run",
