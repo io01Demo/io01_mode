@@ -42,19 +42,14 @@
     "PTZ_host_discover": {
         "type": "run",
         "desc": "PTZ host discover-[target_ip]", 
-        "cmd": "python3 ./third_party/PTZ_host_discover.py" 
+        "cmd": "python3 ./third_party/PTZ_host_discover.py --host" 
     },
      "PTZ_host_discover": {
         "type": "run",
         "desc": "PTZ host information discover- no scan [target_ip]", 
-        "cmd": "python3 ./third_party/PTZ_host_discover.py" 
+        "cmd": "python3 ./third_party/PTZ_host_discover.py --host" 
     },
-    "PTZ_host_info": {
-        "type": "run",
-        "desc": "PTZ full host information - no scan [target_ip]", 
-        "cmd": "python3 ./third_party/PTZ_host_info.py" 
-    },
-   
+    
      "RTSPUrl": {
         "type": "run",
         "desc": "Detailed Port Scanning [target_ip]", 
