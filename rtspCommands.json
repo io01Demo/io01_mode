@@ -12,7 +12,7 @@
    "inspect_traffic_routes": {
 	"type": "run",
         "desc": "Sniff [interface] for [duration(30s)] to detect network route and VLANS", 
-        "cmd": "sudo python3 ./third_party/inspect_traffic_rout_x1.py" 
+        "cmd": "sudo python3 ./third_party/inspect_traffic_routes_x1.py" 
     },
     "inspect_traffic_cam": {
         "type": "run",
