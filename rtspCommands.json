@@ -32,7 +32,7 @@
      "onvif_host_discover": {
         "type": "run",
         "desc": "ONVIF host information discover- no scan [target_ip]", 
-        "cmd": "python3 ./third_party/onvif_host_info.py" 
+        "cmd": "python3 ./third_party/onvif_host_info.py --host" 
     },
     "onvif_host_info": {
         "type": "run",
@@ -54,11 +54,7 @@
         "desc": "PTZ full host information - no scan [target_ip]", 
         "cmd": "python3 ./third_party/PTZ_host_info.py" 
     },
-    "RTSPScan": {
-        "type": "run",
-        "desc": "Locate the RTSP Port [target_ip]", 
-        "cmd": "sudo nmap -p 554 --open"
-    },
+   
      "RTSPUrl": {
         "type": "run",
         "desc": "Detailed Port Scanning [target_ip]", 
