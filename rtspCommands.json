@@ -34,7 +34,19 @@
         "desc": "Detailed Port Scanning [target_ip]", 
         "cmd": "sudo nmap --script rtsp-url-brute -d -p 554" 
     },
-  "hydra": 
+    "onvif_net_discover":
+    {
+        "type": "run",
+        "desc": "ONVIF Netacan+ information discover [target_network]", 
+        "cmd": "python3 ./third_party/onvif_net_discover.py" 
+    },
+   "onvif_host_discover":
+    {
+        "type": "run",
+        "desc": "ONVIF host information discover- no scan [target_ip]", 
+        "cmd": "python3 ./third_party/onvif_host_discover.py" 
+    },
+    "hydra": 
     {
         "type": "run",
         "desc": "Password Brute force  [hydra -l admin -P rockyou.txt 10.0.0.13 rtsp]", 
