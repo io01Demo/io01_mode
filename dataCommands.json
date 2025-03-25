@@ -78,7 +78,7 @@
 "convertxlsx": 
     {
         "type": "run",
-        "desc": "convert xlsx 2 json [convertxlsx filename.xlsx outputfile.json]", 
+        "desc": "convert xlsx 2 json [convertxlsx filename.xlsx]", 
         "cmd": " ./third_party/xlsx2json.sh"
 	    
     },
