@@ -79,7 +79,7 @@
     {
         "type": "run",
         "desc": "convert xlsx 2 json [convertxlsx filename.xlsx]", 
-        "cmd": " ./third_party/xlsx2json.sh"
+        "cmd": "sudo ./third_party/xlsx2json.sh"
 	    
     },
  "RAGchat": 
