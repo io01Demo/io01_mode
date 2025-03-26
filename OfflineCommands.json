@@ -1,0 +1,259 @@
+   {
+    "io01_ver": {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "echo Visibility 1.0.6"
+    },
+
+    "io01_update": {
+        "type": "run",
+        "desc": "Update  kadabra", 
+        "cmd": "sh ./io01_update.sh"
+    },
+   
+     "self_discover": {
+        "type": "run",
+        "desc": "Detects local network interfaces, internal IP address, external IP address and gateways", 
+        "cmd": "sudo ./third_party/self_discover.sh"
+    },
+	"passive_scan": {
+        "type": "run",
+        "desc": "Sniff local network [interface] for a [duration] and provides basic information", 
+        "cmd": "sudo ./third_party/passive_scan_sniff.sh"
+    },
+"netdiscover": {
+        "type": "run",
+        "desc": "Monitor all systems, devices, traffic [network]", 
+        "cmd": "sudo netdiscover -L -s 1 -r"
+    },
+	"arp_scan": {
+        "type": "run",
+        "desc": "Use arp scan to map [network]", 
+        "cmd": "./third_party/nmapio_arp.sh"
+    },
+	   "pingSweep": {
+        "type": "run",
+        "desc": "Ping Sweep Discovery", 
+        "cmd": "./third_party/pingSweep.sh"
+    },
+	"get_ports": {
+        "type": "run",
+        "desc": "port_scan a network Usage: get_ports  [target_network]", 
+        "cmd": "sudo ./third_party/ports_scan.sh"
+    },   
+	
+	"get_port_info": {
+        "type": "run",
+        "desc": "Get port info [target_ip] [target_port] [protocol] ", 
+        "cmd": "sudo ./third_party/get_info_cpsx.sh"
+    },   
+	"OSdetect": {
+        "type": "run",
+        "desc": "OS detection [target_ip] ", 
+        "cmd": "sudo ./third_party/OSdetect.sh"
+    },   
+     "IPinfo": {
+        "type": "run",
+        "desc": "ipinfo", 
+        "cmd": "curl -s https://ipinfo.io/"
+    },
+	   
+    "getCPE": 
+    {
+        "type": "run",
+        "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint [target_ip]", 
+        "cmd": "sudo nmap -sV -O"
+    },
+   
+	    "get_mitre_ics":
+	   {
+        "type": "run",
+        "desc": "cat ./data/upload/ics-attack.json", 
+        "cmd": "cat ./data/upload/ics-attack.json"
+    },
+    "get_ports_commands":
+	   {
+        "type": "run",
+        "desc": "cat ./data/upload/port_list.json", 
+        "cmd": "cat ./data/upload/port_list.json"
+    },
+   "get_cpe_name": 
+    {
+        "type": "run",
+        "desc": "Get CPE name", 
+        "cmd": "python3 ./third_party/get_cpe_name.py"
+    },
+   "chat": 
+    {
+        "type": "interactive",
+        "desc": "Ask anything - simple chat", 
+        "cmd": "python3 ./third_party/simplechat.py"
+	    
+    },
+ "RAGchat": 
+    {
+        "type": "interactive",
+        "desc": "Ask anything - Retrieval Augmented Generation(RAG) based on Kadabra knowlege", 
+        "cmd": "sudo node ./third_party/RAGchat/ragChat.js"
+	    
+    },
+ "getTraffic": 
+    {
+        "type": "run",
+        "desc": "get traffic info [duration]", 
+        "cmd": "sudo python3 ./third_party/getEncryptedTraffic.py"
+	    
+    },
+   
+    "getCVE": 
+    {
+        "type": "run",
+        "desc": "get CVEs from NATIONAL VULNERABILITY DATABASE, params [cpeName]", 
+        "cmd": "sudo ./third_party/get_cve_by_cpe.sh"
+    },
+"vuln_scan": 
+    {
+        "type": "run",
+        "desc": "Scan for Vunerabilities using NMAP, params [IP]", 
+        "cmd": "sudo ./third_party/nmapio_vuln.sh"
+    },
+
+ "InspectTraffic": 
+    {
+        "type": "interactive",
+        "desc": "Inspect Modbus and SIP Traffic", 
+        "cmd": "sudo python3 ./third_party/inspectTraffic.py"
+	    
+    },	  
+"GetVendor": 
+    {
+        "type": "run",
+        "desc": "get Vendor from mac address [MAC]", 
+        "cmd": "sudo ./third_party/getVendorFromCVE.sh" 
+    },
+"getNCM": 
+    {
+        "type": "run",
+        "desc": "get Vendor from mac address [MAC]", 
+        "cmd": "sudo python3 ./third_party/getNCM.py" 
+    },
+ 
+"tshark": 
+    {
+        "type": "run",
+        "desc": "get real time traffic using tshark", 
+        "cmd": "tshark -l -T json -i any -V"
+    },
+
+	"lsUSB": 
+    {
+        "type": "run",
+        "desc": "get CV'es from NATIONAL VULNERABILITY DATABASE, params <cpeName>", 
+        "cmd": "udevadm info --query=all --name=/dev/ttyUSB0"
+    },
+	   
+	"picocom":    
+   {
+        "type": "interactive",
+        "desc": "picocom /dev/ttyUSB0 -b 115200 -c", 
+        "cmd": "sudo picocom"
+    },
+
+	   
+     "localOSimage": {
+        "type": "run",
+        "desc": "OS details",
+        "cmd": "lsb_release -a"
+    },
+           
+  "sniff": 
+    {
+        "type": "run",
+        "desc": "Sniff traffic into PCAP file. Params <network_interface> <output_pcap_file> <number_of_packets>", 
+        "cmd": "sudo python3  ./third_party/sniffer.py"
+    },
+	
+   "ifconfig": 
+    {
+        "type": "run",
+        "desc": "View Local Network Interfaces--> get_local_interface", 
+        "cmd": "sudo ifconfig"
+    }, 
+ "getInterfaces": 
+    {
+        "type": "run",
+        "desc": "Discover Network Interfaces", 
+        "cmd": 	"sudo ./third_party/network_interfaces_ifconfig.sh"
+    },
+	   "S7-scan": 
+    {
+        "type": "run",
+        "desc": "discover.T1423.002: OT_Network Service Scan--> Siemens SIMATIC S7 PLCs <target_ip_block>", 
+        "cmd": "sudo nmap -Pn -sT -p102 --script s7-info"
+    },
+    
+    "modbus-scan-na": 
+    {
+        "type": "run",
+        "desc": "Non aggressive nmap <target_ip>", 
+        "cmd": "sudo nmap -Pn -sT -p502 --script modbus-discover"
+    },
+
+    "enip-scan": 
+    {
+        "type": "run",
+        "desc": "discover.T0888.001: OT SysInfo Discovery-enip--> enip_fingerprint <target_ip>", 
+        "cmd": "sudo nmap -Pn -sU -p44818 --script enip-info"
+    },
+    
+    "modbus-scan-ag":
+    {
+        "type": "run",
+        "desc": "aggressive nmap <target_ip>",
+        "cmd": "sudo nmap -sT -Pn -p502 --script modbus-discover --script-args modbus-discover.aggressive=true",
+        "default": "set_target_dev"
+    },
+  
+   "bacnet-scan": 
+	    {
+		"type": "run",
+		"desc": "bacnet scan <target_ip>", 
+		"cmd": "sudo nmap -Pn -sU -p47808 --script bacnet-info"
+	    },
+   "omron-scan-sU": 
+	    {
+		"type": "run",
+		"desc": "Omrom PLC Devices UDP/TCP <target_ip>", 
+		"cmd": "sudo nmap -Pn -sU -p9600 --script omrom-info"
+	    },
+   "omron-scan-sT": 
+	    {
+		"type": "run",
+		"desc": "Omrom PLC Devices UDP/TCP <target_ip>", 
+		"cmd": "sudo nmap -Pn -sT -p9600 --script omrom-info"
+	    },
+     
+  "dig": {
+        "type": "run",
+        "desc": "dns lookup using dig",
+        "cmd": "sudo dig"
+    },
+        
+       "yara": {
+        "type": "run",
+        "desc": "run yara",
+        "cmd": "sudo yara"
+    },
+         "trivy": {
+        "type": "run",
+        "desc": "trivy",
+        "cmd": "sudo trivy"
+    },
+      
+         "curl": {
+        "type": "run",
+        "desc": "curl <URL>",
+        "cmd": "sudo curl"
+    }
+           
+}
