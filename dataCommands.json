@@ -22,6 +22,16 @@
         "desc": "get file from Infustion Service [File GUID,Local Path]", 
         "cmd": "echo File XXXx was downloaded sucessfully [200 OK]"
     }, 
+    "cat_json_dir": {
+        "type": "run",
+        "desc": "cat all json files within a <target folder>", 
+        "cmd": "sudo ./third_party/cat_json_dir.sh"
+    },
+    "get_NVD": {
+        "type": "run",
+        "desc": "cat all json files within NVD folder", 
+        "cmd": "sudo ./third_party/cat_json_dir.sh ./data/nvd"
+    },
     "get_mitre_ics":
 	   {
         "type": "run",
