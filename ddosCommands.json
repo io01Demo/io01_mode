@@ -1,1 +1,44 @@
+{
+    
+    "io01_ver": 
+    {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "echo 1.0.20.0 CPS"
+    },
 
+    "io01_update": 
+    {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "sh ./io01_update.sh"
+    },
+	 
+    "tcpdump": 
+    {
+        "type": "run",
+        "desc": "tcp dump utility --> tcpdump-i [interface] -s 65535 -w [file]", 
+        "cmd": "sudo tcpdump"
+    },
+    
+     "tshark": 
+    {
+        "type": "run",
+        "desc": "thsark - Wireshark CLI version", 
+        "cmd": "sudo tshark"
+    },
+    
+    "scapy": 
+    {
+        "type": "run",
+        "desc": "run scapy", 
+        "cmd": "sudo scapy"
+    },
+   "MHDDoS": 
+	    {
+		"type": "run",
+		"desc": "Multi-method, powerful DDoS tool (UDP, TCP, HTTP, and more) --> TCP [TARGET_IP_OR_DOMAIN] [PORT] [THREADS] [TIME_SECONDS] --> example python3 start.py TCP 192.168.1.10 80 1000 60", 
+		"cmd": "sudo python3 ./third_party/MHDDoS/start.py"
+	    }
+    
+}
