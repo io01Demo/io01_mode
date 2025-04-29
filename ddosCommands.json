@@ -43,8 +43,8 @@
  "bonesi": 
     {
 	"type": "run",
-	"desc": "Simulates a DDoS botnet generating UDP, TCP, ICMP floods -->[Interface] [Protocol (tcp, udp, or icmp)] [Target IP] ", 
-	"cmd": "sudo  ./third_party/bonesi/bonesi -i"
+	"desc": "Simulates a DDoS botnet generating UDP, TCP, ICMP floods --> [Target IP:PORT] ", 
+	"cmd": "sudo  ./third_party/bonesi/bonesi"
     }
     
 }
