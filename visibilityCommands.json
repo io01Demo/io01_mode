@@ -137,6 +137,12 @@
         "desc": "get Vendor from mac address [MAC]", 
         "cmd": "sudo python3 ./third_party/getNCM.py" 
     },
+"fping": 
+    {
+        "type": "run",
+        "desc": "optimized to scan whole subnets or IP lists very quickly --> fping -a -g [HOSTS or IP ranges]", 
+        "cmd": "sudo fping -a -g" 
+    },
  
 "tshark": 
     {
