@@ -147,7 +147,7 @@
     {
         "type": "run",
         "desc": " Internet-scale port scanner. --> masscan 10.0.0.0/24 -p80,443,8000-80100 --rate=1000", 
-        "cmd": "sudo masscan 10.0.0.0/24 -p80 --rate=1000" 
+        "cmd": "sudo masscan" 
     },
  
 "tshark": 
