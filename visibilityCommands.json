@@ -143,6 +143,12 @@
         "desc": "optimized to scan whole subnets or IP lists very quickly --> fping -a -g [HOSTS or IP ranges]", 
         "cmd": "sudo fping -a -g" 
     },
+"masscan": 
+    {
+        "type": "run",
+        "desc": " Internet-scale port scanner. --> masscan 10.0.0.0/24 -p80,443,8000-80100 --rate=1000", 
+        "cmd": "sudo masscan 10.0.0.0/24 -p80 --rate=1000" 
+    },
  
 "tshark": 
     {
