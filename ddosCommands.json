@@ -34,6 +34,17 @@
         "desc": "run scapy", 
         "cmd": "sudo scapy"
     },
+ "dig": {
+        "type": "run",
+        "desc": "dns lookup using dig --> [IP]",
+        "cmd": "sudo dig"
+    },
+        
+  "curl": {
+        "type": "run",
+        "desc": "curl is a command-line utility for transferring data to or from a server --> [URL]",
+        "cmd": "sudo curl"
+    },
    "MHDDoS": 
 	    {
 	"type": "run",
