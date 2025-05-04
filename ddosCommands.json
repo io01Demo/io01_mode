@@ -56,6 +56,13 @@
 	"type": "run",
 	"desc": "Simulates a DDoS botnet generating UDP, TCP, ICMP floods --> [Target IP:PORT] ", 
 	"cmd": "sudo ./third_party/bonesi/src/bonesi"
+    },
+ "wrk": 
+    {
+	"type": "run",
+	"desc": "wrk is a modern, high-performance HTTP benchmarking tool that uses multiple threads [-t], connections [-c], and duration [-d] to stress test web servers.", 
+	"cmd": "sudo wrk"
     }
+	
     
 }
