@@ -149,6 +149,12 @@
         "desc": " Internet-scale port scanner. --> masscan 10.0.0.0/24 -p80,443,8000-80100 --rate=1000", 
         "cmd": "sudo masscan" 
     },
+"zgrab": 
+    {
+        "type": "run",
+        "desc": "  fast, modular application-layer network scanner designed for completing large Internet-wide surveys--> zgrab2 ssh 10.0.0.0/24 [Protocol][IP range]", 
+        "cmd": "sudo ./third_party/zgrab2/cmd/zgrab2" 
+    },
  
 "tshark": 
     {
