@@ -64,8 +64,14 @@
         "desc": "discover.T0846.001: TCP SysInfo Discovery--> tcp_fingerprint [target_ip]", 
         "cmd": "sudo nmap -sV -O"
     },
-   
-	    "get_mitre_ics":
+    "mapSMB": 
+    {
+        "type": "run",
+        "desc": "Finds SMB shares across an entire subnet-->smb-enum=shares,smb-enum-users 10.0.0.0/24 [target_ip]", 
+        "cmd": "sudo nmap -p 445 --script smb-enum-shares,smb-enum-users"
+    },
+
+  "get_mitre_ics":
 	   {
         "type": "run",
         "desc": "cat ./data/upload/ics-attack.json", 
