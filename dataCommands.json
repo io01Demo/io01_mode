@@ -42,7 +42,7 @@
 	   {
         "type": "run",
         "desc": "cat ./data/upload/def3nd.json", 
-        "cmd": "cat ./data/upload/def3nd.json"
+        "cmd": "cat ./data/upload/d3fend.json"
     },
   "bms_hvac":
 	   {
