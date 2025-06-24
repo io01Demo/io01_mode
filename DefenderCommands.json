@@ -31,7 +31,7 @@
   },
   "ufw_deny_ssh": {
   "type": "run",
-  "desc": "deny SSH access. Example:ufw_deny_ssh",
+  "desc": "deny SSH access. Deny all SSH access Example:ufw_deny_ssh",
   "cmd": "sudo ufw delete allow 22 && sudo ufw deny 22"
 },
   "ufw_allow_ssh": {
