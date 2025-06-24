@@ -1,31 +1,107 @@
-
-sudo ufw enable             # Enable the firewall
-sudo ufw disable            # Disable the firewall
-sudo ufw status             # Show rules (basic)
-sudo ufw status verbose     # Show rules (detailed)
-sudo ufw reload             # Reload rules
-sudo ufw reset              # Reset all rules and disable UFW
-
-
-sudo ufw allow 22                 # Allow SSH (TCP by default)
-sudo ufw allow 443/tcp           # Allow HTTPS (TCP)
-sudo ufw allow 53/udp            # Allow DNS (UDP)
-sudo ufw allow from 192.168.1.10 # Allow all from specific IP
-sudo ufw allow from 10.0.0.0/24 to any port 22   # Allow SSH from subnet
-sudo ufw allow in on eth0 to any port 80         # Allow HTTP only on eth0
-
-
-
-sudo ufw delete allow 22              # Delete specific rule
-sudo ufw status numbered              # List rules with numbers
-sudo ufw delete [number]              # Delete rule by number
-
-
-
-
-sudo ufw deny 80                  # Block HTTP
-sudo ufw deny from 203.0.113.1    # Block all from specific IP
-
-sudo ufw logging on              # Enable logging
-sudo ufw logging off             # Disable logging
-sudo ufw logging high            # Set log level (low|medium|high|full)
+{
+  "ufw_enable": {
+    "type": "run",
+    "desc": "Enable the firewall. Example: sudo ufw enable",
+    "cmd": "sudo ufw enable"
+  },
+  "ufw_disable": {
+    "type": "run",
+    "desc": "Disable the firewall. Example: sudo ufw disable",
+    "cmd": "sudo ufw disable"
+  },
+  "ufw_status": {
+    "type": "run",
+    "desc": "Show rules (basic). Example: sudo ufw status",
+    "cmd": "sudo ufw status"
+  },
+  "ufw_status_verbose": {
+    "type": "run",
+    "desc": "Show rules (detailed). Example: sudo ufw status verbose",
+    "cmd": "sudo ufw status verbose"
+  },
+  "ufw_reload": {
+    "type": "run",
+    "desc": "Reload firewall rules. Example: sudo ufw reload",
+    "cmd": "sudo ufw reload"
+  },
+  "ufw_reset": {
+    "type": "run",
+    "desc": "Reset all rules and disable UFW. Example: sudo ufw reset",
+    "cmd": "sudo ufw reset"
+  },
+  "ufw_deny_ssh": {
+  "type": "run",
+  "desc": "Delete existing SSH allow rule and deny SSH access. Example: sudo ufw delete allow 22 && sudo ufw deny 22",
+  "cmd": "sudo ufw delete allow 22 && sudo ufw deny 22"
+},
+  "ufw_allow_ssh": {
+    "type": "run",
+    "desc": "Allow SSH (TCP). Example: sudo ufw allow 22",
+    "cmd": "sudo ufw allow 22"
+  },
+  "ufw_allow_https": {
+    "type": "run",
+    "desc": "Allow HTTPS (TCP). Example: sudo ufw allow 443/tcp",
+    "cmd": "sudo ufw allow 443/tcp"
+  },
+  "ufw_allow_dns": {
+    "type": "run",
+    "desc": "Allow DNS (UDP). Example: sudo ufw allow 53/udp",
+    "cmd": "sudo ufw allow 53/udp"
+  },
+  "ufw_allow_from_ip": {
+    "type": "run",
+    "desc": "Allow all from specific IP. Example: ufw_allow_from_ip from 192.168.1.10[Parameter:IP]",
+    "cmd": "sudo ufw allow from "
+  },
+  "ufw_allow_subnet_ssh": {
+    "type": "run",
+    "desc": "Allow SSH from subnet. Example: sudo ufw allow from 10.0.0.0/24 to any port 22",
+    "cmd": "sudo ufw allow from 10.0.0.0/24 to any port 22"
+  },
+  "ufw_allow_interface_http": {
+    "type": "run",
+    "desc": "Allow HTTP only on eth0. Example: sudo ufw allow in on eth0 to any port 80",
+    "cmd": "sudo ufw allow in on eth0 to any port 80"
+  },
+  "ufw_delete_rule_allow_ssh": {
+    "type": "run",
+    "desc": "Delete specific rule. Example: sudo ufw delete allow 22",
+    "cmd": "sudo ufw delete allow 22"
+  },
+  "ufw_status_numbered": {
+    "type": "run",
+    "desc": "List rules with numbers. Example: sudo ufw status numbered",
+    "cmd": "sudo ufw status numbered"
+  },
+  "ufw_delete_by_number": {
+    "type": "run",
+    "desc": "Delete rule by number. Example: sudo ufw delete [Parameter:number]",
+    "cmd": "sudo ufw delete "
+  },
+  "ufw_deny_http": {
+    "type": "run",
+    "desc": "Block HTTP. Example: sudo ufw deny 80",
+    "cmd": "sudo ufw deny 80"
+  },
+  "ufw_deny_ip": {
+    "type": "run",
+    "desc": "Block all from specific IP. Example: ufw_deny_ip 192.168.1.0 [Parameter:IP]",
+    "cmd": "sudo ufw deny from "
+  },
+  "ufw_logging_on": {
+    "type": "run",
+    "desc": "Enable logging. Example: sudo ufw logging on",
+    "cmd": "sudo ufw logging on"
+  },
+  "ufw_logging_off": {
+    "type": "run",
+    "desc": "Disable logging. Example: sudo ufw logging off",
+    "cmd": "sudo ufw logging off"
+  },
+  "ufw_logging_high": {
+    "type": "run",
+    "desc": "Set log level. Example: sudo ufw logging high",
+    "cmd": "sudo ufw logging high"
+  }
+}
