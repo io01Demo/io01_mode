@@ -1,0 +1,31 @@
+
+sudo ufw enable             # Enable the firewall
+sudo ufw disable            # Disable the firewall
+sudo ufw status             # Show rules (basic)
+sudo ufw status verbose     # Show rules (detailed)
+sudo ufw reload             # Reload rules
+sudo ufw reset              # Reset all rules and disable UFW
+
+
+sudo ufw allow 22                 # Allow SSH (TCP by default)
+sudo ufw allow 443/tcp           # Allow HTTPS (TCP)
+sudo ufw allow 53/udp            # Allow DNS (UDP)
+sudo ufw allow from 192.168.1.10 # Allow all from specific IP
+sudo ufw allow from 10.0.0.0/24 to any port 22   # Allow SSH from subnet
+sudo ufw allow in on eth0 to any port 80         # Allow HTTP only on eth0
+
+
+
+sudo ufw delete allow 22              # Delete specific rule
+sudo ufw status numbered              # List rules with numbers
+sudo ufw delete [number]              # Delete rule by number
+
+
+
+
+sudo ufw deny 80                  # Block HTTP
+sudo ufw deny from 203.0.113.1    # Block all from specific IP
+
+sudo ufw logging on              # Enable logging
+sudo ufw logging off             # Disable logging
+sudo ufw logging high            # Set log level (low|medium|high|full)
