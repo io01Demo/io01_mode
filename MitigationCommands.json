@@ -12,7 +12,12 @@
     },
     "mitigation_plan": {
         "type": "run",
-        "desc": "take a task a break it into sub task and actions needed to reslove an issue [Parameter: task]", 
+        "desc": "take a task and break it into sub task and actions needed to reslove an issue [Parameter: task]", 
         "cmd": "python3 ./third_party/vuln_consultant.py"
+    },
+    "create_module": {
+        "type": "run",
+        "desc": "take a task a break it into sub tasks and actions needed to reslove an issue, it will create a Kadabra module file with commands needed to complete the task [Parameter: task]", 
+        "cmd": "python3 ./third_party/create_module.py"
     }
  }
