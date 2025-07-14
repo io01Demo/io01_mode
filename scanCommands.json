@@ -1,0 +1,22 @@
+{
+  "io01_nmap_1": {
+    "type": "run",
+    "desc": "Identify live hosts in the 10.0.0.0/24 network",
+    "cmd": "nmap -sn 10.0.0.0/24"
+  },
+  "io01_nmap_2": {
+    "type": "run",
+    "desc": "Scan for open remote and admin access ports on live hosts [param:live_hosts] ",
+    "cmd": "nmap -p 22,23,3389,5900,5985,5986,445,80,443 --open -iL"
+  },
+  "io01_nmap_3": {
+    "type": "run",
+    "desc": "Identify services and potential admin interfaces on detected ports",
+    "cmd": "nmap -sV -p 22,23,3389,5900,5985,5986,445,80,443 -iL [param:live_hosts] "
+  },
+  "io01_whatweb_4": {
+    "type": "run",
+    "desc": "Enumerate web admin interfaces [param:http://webserver] ",
+    "cmd": "whatweb "
+  }
+}
