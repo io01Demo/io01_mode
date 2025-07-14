@@ -1,0 +1,18 @@
+{
+    "io01_ver": {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "echo Mitigation Agent"
+    },
+
+    "io01_update": {
+        "type": "run",
+        "desc": "Update  kadabra", 
+        "cmd": "sh ./io01_update.sh"
+    },
+    "mitigation_plan": {
+        "type": "run",
+        "desc": "take a task a break it into sub task and actions needed to reslove an issue [Parameter: task]", 
+        "cmd": "python3 ./third_party/vuln_consultant.py"
+    }
+ }
