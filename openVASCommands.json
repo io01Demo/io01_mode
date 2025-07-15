@@ -1,0 +1,35 @@
+{
+    "io01_ver": {
+        "type": "run",
+        "desc": "SKadabra openBAS agent", 
+        "cmd": "echo  openVAS Agent"
+    },
+
+    "io01_update": {
+        "type": "run",
+        "desc": "Update  kadabra", 
+        "cmd": "sh ./io01_update.sh"
+    },
+    "generate_openVAS_report": {
+        "type": "run",
+        "desc": "read a content of an openVAS report [Parameter: report id(i,e 0b0e6d50-98ae-4f9c-9e67-6c2c7504280d0]", 
+        "cmd": "python3 ./third_party/generate_openVAS_report.py"
+    },
+    "get_openVAS_tasks": {
+        "type": "run",
+        "desc": "get all task from OpenVAS scanner", 
+        "cmd": "python3 ./third_party/check_openVAS_tasks.py"
+    },
+   "get_openVAS_task_id": {
+        "type": "run",
+        "desc": "get specific task details including task status,progress,target and more from OpenVAS scanner [Parameter: Task ID]", 
+        "cmd": "python3 ./third_party/check_openVAS_task_id.py"
+    },
+ "start_openVAS_scan": {
+        "type": "run",
+        "desc": "start and openVAS scan on a target IP [Parameters: TARGET_IP, TARGET_NAME, and TASK_NAME]", 
+        "cmd": "python3 ./third_party/start_openVAS_scan.py"
+    }
+  
+ }
+
