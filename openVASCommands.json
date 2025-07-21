@@ -12,17 +12,17 @@
     },
     "generate_openVAS_report": {
         "type": "run",
-        "desc": "read a content of an openVAS report [Parameter: report id(i,e 0b0e6d50-98ae-4f9c-9e67-6c2c7504280d0]", 
+        "desc": "read a content of an openVAS report [Parameter: report id(i,e 92b838c2-abf8-4d9a-a30e-84bde3655851]", 
         "cmd": "python3 ./third_party/generate_openVAS_report.py"
     },
     "get_openVAS_tasks": {
         "type": "run",
-        "desc": "get all task from OpenVAS scanner", 
+        "desc": "get all tasks and reports from OpenVAS scanner", 
         "cmd": "python3 ./third_party/check_openVAS_tasks.py"
     },
    "get_openVAS_task_id": {
         "type": "run",
-        "desc": "get specific task details including task status,progress,target and more from OpenVAS scanner [Parameter: Task ID]", 
+        "desc": "show report of a scan and get specific task details including task status,progress,target and more from OpenVAS scanner [Parameter: Task ID]", 
         "cmd": "python3 ./third_party/check_openVAS_task_id.py"
     },
  "start_openVAS_scan": {
