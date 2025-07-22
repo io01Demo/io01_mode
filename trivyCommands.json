@@ -1,0 +1,90 @@
+{
+
+
+  
+  "trivy_fs": {
+    "type": "run",
+    "desc": "Scan local filesystem for vulnerabilities, secrets, misconfigurations, licenses. Example: trivy fs /path/to/project",
+    "cmd": "trivy fs /path/to/project"
+  },
+  "trivy_fs_file": {
+    "type": "run",
+    "desc": "Scan a single file on filesystem. Example: trivy fs /path/to/file",
+    "cmd": "trivy fs /path/to/file"
+  },
+  "trivy_image": {
+    "type": "run",
+    "desc": "Scan container image for vulnerabilities & secrets. Example: trivy image python:3.4-alpine",
+    "cmd": "trivy image YOUR_IMAGE_NAME"
+  },
+  "trivy_image_config": {
+    "type": "run",
+    "desc": "Scan container image metadata for misconfigurations. Example: trivy image --image-config-scanners config YOUR_IMAGE_NAME",
+    "cmd": "trivy image --image-config-scanners config YOUR_IMAGE_NAME"
+  },
+  "trivy_image_misconfig": {
+    "type": "run",
+    "desc": "Run specific scanners on container image. Example: trivy image --scanners config YOUR_IMAGE_NAME",
+    "cmd": "trivy image --scanners config YOUR_IMAGE_NAME"
+  },
+  "trivy_image_license": {
+    "type": "run",
+    "desc": "Scan container image for licenses. Example: trivy image --scanners license YOUR_IMAGE_NAME",
+    "cmd": "trivy image --scanners license YOUR_IMAGE_NAME"
+  },
+  "trivy_repo": {
+    "type": "run",
+    "desc": "Scan code repository for vulnerabilities & secrets. Example: trivy repo YOUR_REPO_URL_OR_PATH",
+    "cmd": "trivy repo YOUR_REPO_URL_OR_PATH"
+  },
+  "trivy_repo_config": {
+    "type": "run",
+    "desc": "Scan repository for misconfigurations. Example: trivy repo --scanners config YOUR_REPO_URL_OR_PATH",
+    "cmd": "trivy repo --scanners config YOUR_REPO_URL_OR_PATH"
+  },
+  "trivy_repo_license": {
+    "type": "run",
+    "desc": "Scan repository for license issues. Example: trivy repo --scanners license YOUR_REPO_URL_OR_PATH",
+    "cmd": "trivy repo --scanners license YOUR_REPO_URL_OR_PATH"
+  },
+  "trivy_vm_file": {
+    "type": "run",
+    "desc": "[EXPERIMENTAL] Scan local VM image for vulnerabilities. Example: trivy vm --scanners vuln disk.vmdk",
+    "cmd": "trivy vm --scanners vuln VM_IMAGE_FILE"
+  },
+  "trivy_vm_ami": {
+    "type": "run",
+    "desc": "[EXPERIMENTAL] Scan AWS AMI for vulnerabilities. Example: trivy vm --scanners vuln ami:AMI_ID",
+    "cmd": "trivy vm --scanners vuln ami:AMI_ID"
+  },
+  "trivy_vm_ebs": {
+    "type": "run",
+    "desc": "[EXPERIMENTAL] Scan AWS EBS snapshot for vulnerabilities. Example: trivy vm ebs:EBS_SNAPSHOT_ID",
+    "cmd": "trivy vm --scanners vuln ebs:EBS_SNAPSHOT_ID"
+  },
+  "trivy_aws": {
+    "type": "run",
+    "desc": "[EXPERIMENTAL] Scan AWS account for misconfigurations. Example: trivy aws --region us-east-1",
+    "cmd": "trivy aws --region REGION"
+  },
+  "trivy_aws_service": {
+    "type": "run",
+    "desc": "[EXPERIMENTAL] Scan specific AWS service. Example: trivy aws --region us-east-1 --service s3",
+    "cmd": "trivy aws --region REGION --service SERVICE"
+  },
+  "trivy_sbom": {
+    "type": "run",
+    "desc": "Scan SBOM file for vulnerabilities/licenses. Example: trivy sbom /path/to/sbom_file",
+    "cmd": "trivy sbom /path/to/sbom_file"
+  },
+  "trivy_vuln_package_relationship": {
+    "type": "run",
+    "desc": "Filter vulnerability scan by package relationships. Example: trivy repo --pkg-relationships direct /path",
+    "cmd": "trivy repo --pkg-relationships direct /path/to/project"
+  },
+  "trivy_secret_customfs": {
+    "type": "run",
+    "desc": "Scan filesystem for secrets with custom config. Example: trivy fs --scanners secret --secret-config ./config.yaml /data",
+    "cmd": "trivy fs --scanners secret --secret-config ./config.yaml /data"
+  }
+}
