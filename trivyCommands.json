@@ -1,6 +1,17 @@
 {
+  "io01_ver": 
+    {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "echo 2.0.0.01 Trivy"
+    },
 
-
+    "io01_update": 
+    {
+        "type": "run",
+        "desc": "Show kadabra commands help", 
+        "cmd": "sh ./io01_update.sh"
+    },
   
   "trivy_fs": {
     "type": "run",
