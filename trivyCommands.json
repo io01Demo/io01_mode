@@ -1,21 +1,17 @@
 {
-  "io01_ver": 
-    {
-        "type": "run",
-        "desc": "Show kadabra commands help", 
-        "cmd": "echo 2.0.0.01 Trivy"
-    },
-
-    "io01_update": 
-    {
-        "type": "run",
-        "desc": "Show kadabra commands help", 
-        "cmd": "sh ./io01_update.sh"
-    },
-  
+  "io01_ver": {
+    "type": "run",
+    "desc": "Show kadabra commands help",
+    "cmd": "echo 2.0.0.01 Trivy"
+  },
+  "io01_update": {
+    "type": "run",
+    "desc": "Show kadabra commands help",
+    "cmd": "sh ./io01_update.sh"
+  },
   "trivy_fs": {
     "type": "run",
-    "desc": "Scan local filesystem for vulnerabilities, secrets, misconfigurations, licenses. Example: trivy fs /path/to/project",
+    "desc": "Scan local filesystem for vulnerabilities, secrets, misconfigs, licenses. Example: trivy fs /path/to/project",
     "cmd": "trivy fs"
   },
   "trivy_fs_file": {
@@ -92,5 +88,80 @@
     "type": "run",
     "desc": "Filter vulnerability scan by package relationships. Example: trivy repo --pkg-relationships direct /path",
     "cmd": "trivy repo --pkg-relationships direct"
+  },
+  "trivy_fs_scan": {
+    "type": "run",
+    "desc": "Scan local filesystem for vulnerabilities, misconfigs, secrets, and licenses",
+    "cmd": "trivy fs ./ --scanners vuln,secret,config,license --format table"
+  },
+  "trivy_image_scan": {
+    "type": "run",
+    "desc": "Scan a container image for vulnerabilities and metadata",
+    "cmd": "trivy image <image_name> --format table"
+  },
+  "trivy_image_sbom": {
+    "type": "run",
+    "desc": "Generate CycloneDX SBOM for a container image",
+    "cmd": "trivy image <image_name> --format cyclonedx --scanners vuln,license --output sbom.json"
+  },
+  "trivy_image_json": {
+    "type": "run",
+    "desc": "Scan container image with JSON output",
+    "cmd": "trivy image <image_name> --format json --output report.json"
+  },
+  "trivy_repo_scan": {
+    "type": "run",
+    "desc": "Scan remote repository or GitHub repo for dependency vulnerabilities",
+    "cmd": "trivy repo https://github.com/<user>/<repo>"
+  },
+  "trivy_config_scan": {
+    "type": "run",
+    "desc": "Scan Infrastructure-as-Code configs (Terraform/K8s/Dockerfiles)",
+    "cmd": "trivy config ./"
+  },
+  "trivy_secret_scan": {
+    "type": "run",
+    "desc": "Scan files or directories for hardcoded secrets",
+    "cmd": "trivy fs ./ --scanners secret"
+  },
+  "trivy_license_audit": {
+    "type": "run",
+    "desc": "Scan for open-source license issues in packages",
+    "cmd": "trivy fs ./ --scanners license"
+  },
+  "trivy_kubernetes_cluster": {
+    "type": "run",
+    "desc": "Scan Kubernetes cluster using kubeconfig context",
+    "cmd": "trivy k8s cluster"
+  },
+  "trivy_kubernetes_resources": {
+    "type": "run",
+    "desc": "Scan running Kubernetes resources (e.g., pods, deployments)",
+    "cmd": "trivy k8s all"
+  },
+  "trivy_kubernetes_namespace": {
+    "type": "run",
+    "desc": "Scan specific Kubernetes namespace for vulnerabilities",
+    "cmd": "trivy k8s --namespace <namespace>"
+  },
+  "trivy_db_update": {
+    "type": "run",
+    "desc": "Update Trivy vulnerability and rules database",
+    "cmd": "trivy --download-db-only"
+  },
+  "trivy_clear_cache": {
+    "type": "run",
+    "desc": "Clear Trivy local vulnerability and cache data",
+    "cmd": "trivy clear"
+  },
+  "trivy_version": {
+    "type": "run",
+    "desc": "Show Trivy version",
+    "cmd": "trivy --version"
+  },
+  "trivy_help": {
+    "type": "run",
+    "desc": "Display help for all Trivy commands and flags",
+    "cmd": "trivy --help"
   }
 }
